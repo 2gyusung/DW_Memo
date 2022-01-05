@@ -13,8 +13,35 @@
             비밀번호 rkawk000@
 
             구동 확인 윈도우창 옆에 검색창에 서비스 검색 myspl80 동작 확인
-
+            DB - table - data
+            * 테이블 간의 관계가 있다. RDB 라고 한다.
           
+          number int 정수
+          ARCHAR 문자
+          bit - byte 
+          256   1
+
+           *** DDL (data definition Laguage) : 정의 언어
+          CREATE TABLE <talbe_name> : 생성
+          DROP TABLE <talbe_name> : 삭제
+          ALTER TABLE <talbe_name>  : 수정 (변경 할떄에 수정)
+
+          *** DML(data mainpulation Laguage) : 데이터 조작 언어
+          SELECT : 데이터 조회
+          DELETE :        삭제
+          UPDATE :         수정
+          INSERT :          생성
+
+          *** DCL(data CONTROL Laguage) : 데이터 제어 언어
+          GRANT : 특정 사용자에게 권한 부여
+          REVOKE : 특정 사용자 권한 회수
+
+          Where : 조던(필터링 ) 
+             
+             * : 모든것 조회
+
+             쿼리가 읽는 순서 
+             From - Where - SELECT 순으로 읽는다.
           
           구글링 팁!
           
