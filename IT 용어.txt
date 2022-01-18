@@ -1,0 +1,186 @@
+IT 용어 
+
+* 컴파일 : 사람과 컴퓨터  알아 듣게 번역
+    C,C++,JAVA (고급 언어) 전체적으로 읽어 빠르다
+    코드를 수정 하고  실행 하려면 처음부터 다시 읽는다.
+
+* 인터프리터 : 파이썬 , 자바 스크립트
+    (저급언어)  느리다. 
+    코드를 수정하고 즉시 실행
+
+* 오픈 소스
+소스 코드를 공개해 누구나 특별한 제한 없이 사용하는 소프트웨어
+
+
+IDE (통합 개발 환경)
+이클립스, 파이참
+
+자바는 데이터 타입이 9개이다.
+INT LONG DOUBLE BOOLEAN
+변수 사용하는 이유 재활용 하기 위해서
+
+비트연산자 제외 하고 다 알아야 한다.
+
+변수 이름: 1. 명사로 써야함.
+        2. 길이 제한 없음.
+        3.복합 명사 일때는 
+        *   사용자 정보 > userInfo  (카멜 표기법)
+                        > user_info
+        소문자 사용
+            대문자 사용할때
+            상수값을 표기할 때는 대문자 사용
+            ex 파이 DOUBLE PI =3.14
+            int Level = 6
+            4. 변수 이름은 중복 불 가능
+
+
+            package study;
+
+public class Money {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+				int money = 57000;
+				int man = 0;  //만원
+				int ocheon = 0;	//오천원
+				int temp = 0;
+				
+				temp = money % 10000;
+                //5
+				ocheon = money / 5000;
+                //7000
+				man = money  / 10000 ;
+                //1
+				temp = temp % 5000;
+                //2000
+				
+				System.out.println("거스름돈 이전 금액 :" +money );
+				System.out.println("만원 몇장:" +man );
+				System.out.println("오천원 몇 장:" + ocheon );
+				System.out.println("남은 돈 :" + temp +"원");
+				
+		
+
+}
+}
+------------------------
+package study;
+
+public class Money {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+				int 콩나물국밥 = 5000;
+				int 돼지국밥 =7000;
+				돼지국밥 = 콩나물국밥 + 돼지국밥;
+				
+				돼지국밥 = 1000;
+		
+
+}
+}
+
+--------------------------------------------------
+					int 국어 = 100;
+					int 영어 = 50;
+					int 수학 = 20;
+					int 과학 = 88;
+					final int 과목수 = 4;
+					int sum = 0;
+					double avg = 0; 
+					
+					
+					 sum = 국어 + 영어 + 수학 + 과학;
+							avg = sum / 4;
+								System.out.println("평균점수는 + " avg);
+					System.out.println("총점은 ? + " sum);
+
+
+String 캐릭터 = "아무무";
+				
+		int 레벨 = 6;
+		
+		레벨 = 레벨 +1;
+		레벨 = 100;
+		레벨  += 레벨;
+//	레벨 = 레벨 + 레벨;
+		System.out.println("내가 선택한 " +  캐릭터 + " 이다.");
+		System.out.println("내가 선택한 " +  레벨 + " 이다.");
+
+		// if (만약에)/ else( 아니라면) 	
+//	
+//		int x = 5;
+//		int y = 7;
+//		
+//		if (x == y)  {
+//			System.out.println("x랑 y는 같아요!");
+//		}else 
+//		{ //만약에 틀린다면
+//			
+//			System.out.println("아닙니다.");
+//		}
+//		
+//		 if (x != y)  {
+//			System.out.println("x랑 y는 달라요!");
+//		}
+
+//		int myScore = 40;
+//
+//		if (myScore >= 90) {
+//			System.out.println("a 학점입니다.");
+//		}
+//		if (myScore < 90 && myScore >= 80) {
+//			System.out.println("b 학점입니다.");
+//		}
+//		if (myScore < 80 && myScore >= 70) {
+//			System.out.println("c 학점입니다.");
+//		}
+//		if (myScore < 60 && myScore >= 50) {
+//			System.out.println("d 학점입니다.");
+//		
+//		}
+//		if (myScore < 50 && myScore >= 40) {
+//			System.out.println("f 학점입니다.");
+		
+
+////		int x = 10;
+//		int y = 10;
+//		int num = 0;
+//		if (x != y) {
+//			num = x + y;
+//			
+//		}
+//		System.out.println(num);
+//		
+		
+		int x = 10;
+		int y = 10;
+		int num = 0;
+		if (x == y) {
+			num = x + y;
+			
+		}
+		num = 0;
+		System.out.println(num);
+		
+
+
+}
+}
+
+Scanner scan = new Scanner(System.in); // ctrl + shift + o
+		
+		
+		int value = scan.nextInt();
+
+			//방법1
+			if (value < 95 && value >= 90) {
+				System.out.println("S 입니다.");
+			}
+			//방법 2
+		 if  (value < 95 && value >= 100) {
+			System.out.println("S 입니다.");
+		
+		}
+	}
+}

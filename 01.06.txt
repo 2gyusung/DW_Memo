@@ -1,0 +1,46 @@
+
+1. 데이터베이스 저장하는 프로그램 - DB 
+2. SQL 문법을 이용하여 데이터를 가져와야함.
+***** DDL(데이터 정의 언어) 테이블 관리하는 명령어 : CREATE ALTER DROP
+***** DML()테이블 안에 있는 데이터를 관리하는 명령어 : SELECT DELETE INSERT UPDATE
+** DCL(데이터 조작 언어) DB 관리  : GRANT REVOKE
+엔티티 테이블 동일한 언어
+  <문법>
+-SELECT
+        <컬럼 이름> ,<컬럼이름> ... n
+From
+    <테이블>,<테이블>
+
+Where(원하는 조건 필터링 나옴)
+<조건>
+MGR 사수 번호  HIREDATE :  고용 날짜
+ SAL : 월급 
+ COMM : 보너스 
+ DEPTNO :부서 번호
+*관계 연산자 : >,<, <=, >=, =, !=(다르다 라고 표현)
+*************count(*)  : 함수***********************
+count(*)  as '총합' : 별칭
+
+*논리 연산자 
+and or
+
+DESC :오름차순
+ASC :내림차순
+
+From - Where -SELECT - ORDER BY
+NULL : 값을 넣지 않은 상태where  
+COMM is NOT null : NULL값이 아닌것 
+이름 조회 : Where ename like 'Ford'
+
+*중복된 코드는 좋지 않다.
+where ENAME like 'A%' : A로 시작하는 사람 조회
+where ENAME like '%L%L%' : L로 2번 들어간 이름 조회
+ORDER by 문법 되도록이면 자제 할것.(정렬)
+ex) insert into emp
+(empno,ENAME,JOB,MGR,HIREDATE,SAL,DEPTNO)
+values
+(8001,'홍길동','SALESMAN',7839,'2022-01-28',5000,30)
+UPDATE문 이용 할때에 where문 사용 할것.
+
+From-  where - group by -  having - from
+From - Where -SELECT - ORDER BY
