@@ -1,0 +1,70 @@
+group by 할때는 
+SELECT 절에 group이 되는 컬럼이 위치.
+
+연산자는 
+where절에 온다.
+
+관계 :!= , = > < >= =<
+논리 : and or
+문자 : like
+
+SELECT
+DEPTNO,
+max(SAL) as 'dddd'
+from emp
+group by DEPTNO
+having max(sal) > 5000
+
+ *****************문제 찾아보기!!!!!!!!!!!
+1부서별 직책( 그룹핑)
+최대 급여 인원수 최소급여 추출(SELECT)
+10번 부서 제외(where)
+인원 수는 3명 이하(having)
+인원 수가 적은 순서(정렬)
+
+
+
+2부서별(그룹핑)!
+급여 합계(sum) 조회
+10 , 30 부서
+5000 이상인 조회
+
+3 직책별 매니저 제외  sal 1000 이상만 추출 그룹
+직책별 그룹
+급여 합계(sum) 평균(avg) 급여 
+JOB 이 매니저 제외 where
+평균 sal 1000이상(having)
+
+**** 중요 *****************************
+{select 
+ENAME ,
+ifnull(comm, 100)
+from emp
+
+-if null은 데이터가 null인 행에 임의 데이터 넣는다.
+(데이터 UPDATE하는게 아님.)
+
+
+date_Format
+날짜 함수
+select
+    date_Format(HIREDATE,'%y')
+from emp
+
+---------------------------------------------------
+select
+    date_Format(HIREDATE,'%Y-%m') as '년도'
+from emp
+group by date_format(HIREDATE,'%Y') 
+
+
+https://devjhs.tistory.com/89
+
+mysql date_format
+--------------------------------------------------
+
+**and,or
+where 조건에 동시에 사용할때 가 있음.
+1. and (먼저 실행)
+2. or   
+() 괄호가 우선

@@ -1,0 +1,28 @@
+서브 쿼리 
+하나의 쿼리 문장 내에 포함된
+또 하나의 쿼리
+
+** 규칙
+1 반드시 () 괄호로 묶음
+select
+(select..)
+from A table
+2.서브쿼리가 먼저 실행 된후 외부쿼리와 비교/ 연산 서브 쿼리가 가능한곳
+3-1 select절 (스칼라 서브쿼리)
+ -2 ***from 절 (인라인 뷰)
+ -3 where 절 (중첩 서브 쿼리)
+ -4 having 
+ -5 order by
+ -6 insert values
+ -7 update select
+    update emp (mysql 실행 안됨
+    
+4. 서브쿼리 종리
+            단일 서브쿼리,
+            다중행 서브쿼리
+
+다중행 서브쿼리(간단하게)
+delete,
+모델링(table create하는 작업)
+pk,fk 작업을 여기서 함.
+테이블의 데이터 타입 > 자바시간
