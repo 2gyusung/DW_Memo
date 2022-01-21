@@ -1,0 +1,27 @@
+package study;
+// 배열
+public class ex222
+{
+	// 데이터 타입 9개 일반 타입 8개 클래스 타입
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		//배열 		// 0  1 2 3 (미국식)
+		int array[] = {3,6,9,10,1};
+		
+		System.out.println(array[5]); //첫번째(인덱스)호 출
+		System.out.println(array.length);
+		
+		
+//		System.out.println(array[4]); //에러
+		
+		for(int i=0; i<array.length; i++) {
+			if((array[i] % 3) != 0) {
+			System.out.println("3의 배수 개수는 : " +array[i]);
+		}
+		
+		
+		
+	}
+	}
+}
