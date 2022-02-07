@@ -1,0 +1,12 @@
+JOIN : 교집합 데이터 연결
+2개 이상 데이터 연결
+교집합 조인, 내부 조인
+
+
+SELECT * 
+    e.ename
+FROM emp as e
+inner JOIN dept AS dept  as d
+ON e.deptno = d.deptno
+
+아우터 조인
