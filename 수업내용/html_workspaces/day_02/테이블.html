@@ -43,10 +43,11 @@
     </style>
   </head>
   <body>
-    <table class="programs-data">
-      <thead>
-        <tr>
-          <th></th>
+    <table class="programs-data">   <!--테이블을 만든다.-->
+      <thead><!--테이블의 헤더 영역 지정-->
+        <tr> <!--테이블의 행(가로 한줄)을 만든다-->
+          <th></th><!--테이블(표)의 헤드 부분(자동으로 가운데 정렬,  
+                        굵게 적용)-->
           <th>시간</th>
           <th>월</th>
           <th>화</th>
@@ -55,8 +56,8 @@
           <th>금</th>
           <th>토</th>
         </tr>
-      </thead>
-      <tbody>
+      </thead><!--테이블의 헤더 영역 종료 지정-->
+      <tbody> <!--테이블의 바디 영역 지정-->
         <tr>
           <td>오전 반</td>
           <td>11:00 ~ 12:00</td>
@@ -81,7 +82,8 @@
         <tr>
           <td>저녁 1부</td>
           <td>19:30 ~ 21:00</td>
-          <td colspan="2">주짓수</td>
+          <td colspan="2">주짓수</td><!-- colspan :지정한 값만큼 열을 병합한다. (좌우로) /rawspan : 지정한 값만큼 행을 병합한다. (위아래로) -->
+
           <td>레슬링</td>
           <td colspan="2">주짓수</td>
           <td>-</td>
