@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position/관련 수업</title>
+    <style>
+        .a {
+            background-color: red;
+            width: 100px;
+            height: 100px;
+          
+
+        }
+        .b {
+            position: relative;
+            top: 0px;
+            left: 100px;
+            background-color: yellow;
+            width: 100px;
+            height: 100px;
+        }
+        
+        .c {
+            
+            position: absolute;
+            top: 0px;
+            left: 100px;
+            background-color: green;
+            width: 100px;
+            height: 100px;
+        }
+       
+        .d {
+            position: fixed;
+            width: 100px;
+            background-color: #2ED774;
+            bottom: 0;
+            right: 0;
+        }
+
+        body {
+            height: 200vh;
+            
+        }
+        .mom {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            background-color: darkorange;
+        }
+        .sun{
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-color: orangered;
+        }
+        
+        
+    </style>
+</head>
+<body>
+<div class = "a">A 구역</div>
+<div class = "b">B 구역</div>
+<div class = "c">C 구역</div>
+<div class = "d">D 구역</div>
+
+<!--**중요  -->
+<div class="mom">부모
+    <div class="sun">자식</div>
+
+</div>
+    
+</body>
+</html>

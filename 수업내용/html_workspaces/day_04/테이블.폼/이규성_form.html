@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+      .contact-form {
+        box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.5);
+        margin: 50px auto;
+        width: 350px;
+        text-align: center;
+      }
+      .contact-form h2 {
+        background-color: #efefef;
+        margin-top: 0;
+        padding: 10px;
+      }
+      .contact-form input {
+        width: 90%;
+        margin: 10px auto;
+        padding: 10px;
+      }
+      .contact-form input[type=checkbox]  {
+        width: 10%;
+        margin: 10px auto;
+        padding: 10px;
+      }
+      .contact-form textarea {
+        width: 90%;
+        margin: 5px auto;
+        padding: 10px;
+        height: 80px;
+      }
+      .submit-btn {
+        cursor: pointer;
+        width: 150px;
+        margin-left: 18px;
+      }
+      .form22 {
+        width: 150px;
+        height: 90px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- action = "서버 주소 입력시 웹서버 전송" -->
+    <!--** 웹 서버에 전송 하는 방법이 2 가지  -->
+    <!--** get(public) http header에 전송 / post(private) = 개인정보 http body에 전송-->
+    <form action="서버 주소" method="post"></form>
+    <div class="contact-form">
+      <h2>카페 메뉴</h2>
+      <!-- dd -->
+      <select name="" id="">
+        <option value="">Please choose an menu</option>
+      </select>
+      <!-- 수량 제한 입력시 max = "10" 입력 한다 -->
+      <input type="text" placeholder="수량" />
+      <!-- required : 입력 하게 되면 알림창이 뜬다.(무조건 입력 해야함.) -->
+      <!-- disabled : 서버에 전송 안된다. -->
+      <input type="text" placeholder="회원이름 입력란" /><!-- 입력란 옆에 입력 -->
+      <input type="password" placeholder="회원비밀번호 입력란" />
+     
+        
+        <input type="checkbox" id="광고" checked/ >
+        <label for="광고">광고수신 여부</label>
+        <input type="text" placeholder="이메일 입력란" />
+        <textarea name="message" placeholder="주문시 메모 입력란..."></textarea>
+        <input type="submit-btn" type = "submit"
+        <!-- form 태그 안에 button을 만들면 서버 전송 불가능. submit으로 입력 할 것 -->
+
+      </form>
+    </div>
+  </body>
+</html>
