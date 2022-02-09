@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style1.css" />
+    <title>Document</title>
+    <script>
+      function doSuccess() {
+        alert('주문 완료!');
+      }
+    </script>
+  </head>
+  <body>
+    <form action="action"></form>
+
+    <div class="container">
+      <h2>햄버거</h2>
+      <select name=" " id="">
+        <option value="">Please choose an menu</option>
+        <option value="빅맥">빅맥</option>
+        <option value="상하이스파이시">상하이스파이시</option>
+        <option value="불고기버거">불고기버거</option>
+      </select>
+      <h2>음료</h2>
+      <select name=" " id="">
+        <option value="">Please choose an menu</option>
+        <option value="코카콜라">코카콜라</option>
+        <option value="제로콜라">제로콜라</option>
+        <option value="환타">환타</option>
+      </select>
+      <h3>결제</h3>
+      <input type="checkbox" id="카카오 페이" / >
+      <label for="카카오페이">카카오페이</label>
+      <input type="checkbox" id="네이버 페이" / >
+      <label for="네이버페이">네이버 페이</label>
+      <input type="checkbox" id="카드" / >
+      <label for="카드">카드</label>
+      <input type="checkbox" id="현금" / >
+      <label for="현금">현금</label>
+      <h3>매장/포장</h3>
+      <input type="checkbox" id="테이크아웃" / >
+      <label for="테이크아웃">테이크아웃</label>
+      <input type="checkbox" id="매장" / >
+      <label for="매장">매장</label>
+      <input type="text" placeholder="고객 요청 사항" />
+      <input type="submit" value="주문확인" onclick="doSuccess()" />
+
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </body>
+</html>

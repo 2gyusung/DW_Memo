@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>paddng/margin 수업 내용</title>
+    <style>
+      /* 브라우저 초기 */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      /* 로그인 폼 태그 */
+      .login-form {
+        /* 위 오른쪽&왼쪽 아래*/
+        padding: 5px 10px 10px;
+        /* 테두리 실선 색상*/
+        border: 5px solid #06b6d8;
+        width: 200px;
+        height: 200px;
+      }
+      /* 로그인 폼 input 태그 */
+      .login-form input {
+        width: 100%;
+        /* padding 부모 태그에 작성한다.*/
+        padding: 10px;
+        /* padding 자식 태그 와 자식태그 거리두기*/
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 광고 div / container div 클래스 다르게 만들것. -->
+    <div class="pupup">
+      <!-- 세팅시 기본 태그 입력 -->
+      <div class="container">
+        <!-- 로그인 관련된 태그 -->
+        <form action=""></form>
+        <div class="login-form">
+          <input type="text" value="안녕하세요" />
+          <input type="password" value="안녕하세요" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

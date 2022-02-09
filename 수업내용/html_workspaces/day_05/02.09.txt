@@ -1,0 +1,37 @@
+- position 관련 내용
+static 돌 (디폴트 값)
+relative : 원래 기준 움직임 
+absolute : 자기 마음대로 움직임
+            부모 태그 position이 relative 이면 부모 태그 기준으로 움직임/
+fixed : 고정 스크롤 내릴 떄 마다 계속 따라옴 
+
+<div> // 부모 
+<div></div> //자식
+<div> 
+
+설치 프로그램
+Auto Rename Tag
+Auto Close Tag
+
+
+- margin , padding 관련 수업
+
+    div(박스 태그)
+박스와 박스 간격, 부모 박스 안에 있는 자식 박스 간격 조절 
+
+    margin : * 박스와 박스 간격
+    padding  :부모 박스 안에 있는 *자식 박스 간격 조절
+
+    -   padding 작성법 
+     padding 부모 태그에 작성한다./ 자식 태그와 거리두기     
+    padding : 10px; // 모든 면 10px 패딩
+    padding : 5px(위) ,10px(오른쪽,왼쪽) ,0(아래);
+    padding : 5px(위/아래) 10px(오른쪽/왼쪽); 
+    padding : 10px(위) 10px(오른쪽) 10px(아래쪽) 10px(왼쪽) // 시계 방향
+
+    -   margin 작성법 
+    부모와 부모끼리 거리 두기/부모 태그와 거리두기
+    margin : 10px; // 모든 면 10px 패딩
+    margin : 5px(위) ,10px(오른쪽,왼쪽) ,0(아래);
+    margin : 5px(위/아래) 10px(오른쪽/왼쪽); 
+    margin : 10px(위) 10px(오른쪽) 10px(아래쪽) 10px(왼쪽) // 시계 방향

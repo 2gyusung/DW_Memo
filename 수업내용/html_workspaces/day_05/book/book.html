@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Festive&family=Nanum+Myeongjo&family=Supermercado+One&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+    <style>
+      * {
+        /* 브라우저 초기세팅 */
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+
+        background-color: skyblue;
+      }
+      .book-form {
+        width: 350px;
+        height: auto;
+        border: 1px solid #6495ed;
+        margin: 10% auto 0;
+        padding: 5px 10px 0;
+        border-radius: 5px;
+      }
+      .book-form input {
+        /*부모 태그안에*/
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+        padding: 5px 0 5px;
+        background-color: aliceblue;
+        color: black;
+        border-radius: 5px;
+      }
+      .book-form .true {
+        background-color: #6495ed;
+        /*마우스 올릴시 손가락 모양*/
+        cursor: pointer;
+        color: whitesmoke;
+        font-size: 20px;
+        border-radius: 5px;
+        border-color: skyblue;
+      }
+      .book-form .false {
+        background-color: #6495ed;
+        /*마우스 올릴시 손가락 모양*/
+        cursor: pointer;
+        color: whitesmoke;
+        font-size: 20px;
+        border-radius: 5px;
+        border-color: skyblue;
+      }
+    </style>
+
+    <script>
+      //자바스크립트 메소드
+      function doSuccess() {
+        alert('예약 완료!');
+      }
+      function doFail() {
+        alert('예약 취소!');
+      }
+    </script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="book-form">
+        <input type="text" placeholder="아이디를 입력하세요." />
+        <input type="password" placeholder="비밀번호 입력하세요." />
+        <!-- onclick="doSuccess()" : 클릭시 알림창 -->
+        <input
+          class="true"
+          type="button"
+          value="예약 완료"
+          onclick="doSuccess();"
+        />
+        <!-- onclick="doFail()" : 클릭시 알림창 -->
+        <input
+          class="false"
+          type="button"
+          value="예약 취소"
+          onclick="doFail()"
+        />
+      </div>
+    </div>
+  </body>
+</html>

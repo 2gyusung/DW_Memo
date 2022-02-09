@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-size: 100%;
+   
+  background-image: url('맥도날드.jpg');
+  background-position: center center;
+}
+
+.container form {
+  width: 270px;
+  text-align: center;
+  margin: 10% auto 0;
+  border-radius: 5px;
+}
+
+.container {
+  border: 3px solid #F7DC6F 
+;
+  margin: 200px auto;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  width: 350px;
+  
+  text-align: center;
+}
+
+.container select {
+  width: 180px;
+  height: 20px;
+  margin-bottom: 15px;
+}
+
+.container input {
+  margin: 10px auto;
+  border-color: #F7DC6F 
+;
+  border-radius: 5px;
+  text-align: center;
+  padding: 5px;
+}
+
+.submit {
+  cursor: pointer;
+  width: 150px;
+  margin;
+}
+h3 {
+  margin-top: 20px;
+  margin-bottom: 15px;
+  color: red;
+}
+h2 {
+   margin-top: 20px;
+  margin-bottom: 15px;
+  color: red;
+}
+
+
