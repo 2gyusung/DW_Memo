@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "BMYEONSUNG";
+    src: url('BMYEONSUNG_ttf.ttf');
+    
+}
+body {
+    background-image: url('https://assets.nflxext.com/ffe/siteui/vlv3/6dea7743-5586-45d1-89a2-9569b1bb0340/79c3c9e6-9da9-4265-9e1e-c4ae6d0fbf2c/KR-ko-20220207-popsignuptwoweeks-perspective_alpha_website_small.jpg');
+    background-size: cover;
+    height: 100vh;
+    background-position: center ;
+  
+}
+h1 {
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 300px;
+    font-family: "BMYEONSUNG";
+}
+p {
+    font-size: 16px;
+    text-align: center;
+    color: white;
+    margin-top: 14px;
+    font-family: "BMYEONSUNG";
+
+}
+.email input {
+    margin: 20px auto 0;
+    display: block;
+    padding: 24.5px 2em;
+    width: 300px;
+    min-height: 50px;
+    min-width: 74px;
+    min-height: 50px;
+   
+
+}
+.click  {
+    background-color: red;
+    color: white;
+    font-weight: 800px;
+    border: none;
+    font-size: 1em;
+    padding: 24.5px 2em;
+    min-width: 74px;
+    min-height: 50px;
+    font-family: "BMYEONSUNG";
+}
+
+.section{
+    margin: 10px auto 0;
+}
