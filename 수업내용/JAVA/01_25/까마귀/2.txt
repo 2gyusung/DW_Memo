@@ -1,0 +1,17 @@
+package pizza;
+
+public class DominoPizza {//클래스 시작
+	String pizza; //슈퍼 초 울트라 전역변수(필드변수)
+	int 가격;
+	
+	public void test () { //메소드 시작
+		int x = 10;
+		if(x == 10) {//if 시작
+			int y = 10;//y변수는 if안에서만 사용가능!
+			this.pizza = "불고기피자"; //pizza변수는 초 울트라 전역변수라 사용가능.
+		}//if 끝
+		
+	}//메소드 끝
+
+	
+}//클래스 끝

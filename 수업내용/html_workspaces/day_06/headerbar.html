@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      header {
+        display: flex;
+        justify-content: space-between;
+        background-color: blanchedalmond;
+        padding: 8px 12px;
+        /* 가운데 세팅*/
+        align-items: center;
+      }
+      .logo p {
+        font-size: 24px;
+        color: gray;
+        font-weight: 800px;
+      }
+      a {
+        text-decoration: none;
+      }
+      .menu {
+        /*list 점이 없어진다.*/
+        list-style: none;
+        /* 가운데 세팅, display: inline block 이랑 동일*/
+        display: flex;
+      }
+      .menu li {
+        padding: 8px 12px;
+        color: white;
+      }
+      .menu li:hover {
+        background-color: beige;
+        border-radius: 4px;
+      }
+      .container {
+          display: flex;
+          height: 100vh;
+          flex-direction: column;
+          justify-content: space-between;
+          
+
+
+      }
+   
+      footer p {
+        background-color: blanchedalmond;
+        
+      }
+      .main-text {
+          display: flex;
+      }
+     
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- <header></header> == <div class = 'header'></div> 방식이 있다.-->
+      <header>
+        <div class="logo">
+          <p>선화동 맛집 사이트</p>
+        </div>
+        <ul class="menu">
+          <!--     (li>a)*5  -->
+          <li><a href="">국밥 맛집</a></li>
+          <li><a href="">커피 맛집</a></li>
+          <li><a href="">칼국수 맛집</a></li>
+          <li><a href="">고기 맛집</a></li>
+        </ul>
+        <div class="icon">아이콘 영역</div>
+      </header>
+      <div class="main-text">
+          <p>내용내용</p>
+
+      </div>
+      
+        <footer>
+          <p>탄방동 둔산동 괴정동 월평동은 대전에</p>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

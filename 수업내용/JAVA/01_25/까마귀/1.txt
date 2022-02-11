@@ -1,0 +1,31 @@
+package pizza;
+
+public class 도미노피자호출 {
+
+	public static void main(String[] args) {
+		int x = 10;
+		데이터 타입  int 
+		변수명  x
+		연산자  = 
+		데이터  10
+		DominoPizza pizza = new DominoPizza();
+		데이터 타입  DominoPizza
+		변수명  pizza
+		연산자  =
+		데이터  new DominoPizza();
+		
+		파일을 불러오면 DominoPizza파일 안에 있는
+		필드변수와 메소드 사용가능.
+		pizza.pizza = 치즈피자;
+		데이터 타입  String
+		변수명  pizza
+		연산자  =
+		데이터  치즈피자
+		pizza.가격 = 100;
+		데이터 타입  int
+		변수명  가격
+		연산자  = 
+		데이터  100
+	}
+
+}

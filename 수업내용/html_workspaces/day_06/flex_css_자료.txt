@@ -1,0 +1,31 @@
+      .item1 {
+        background-color: #ef9a9a;
+      }
+      .item2 {
+        background-color: #f48fb1;
+      }
+      .item3 {
+        background-color: #ce93d8;
+      }
+      .item4 {
+        background-color: #b39ddb;
+      }
+      .item5 {
+        background-color: #90caf9;
+      }
+      .item6 {
+        background-color: #a5d6a7;
+      }
+      .item7 {
+        background-color: #e6ee9c;
+      }
+      .item8 {
+        background-color: #fff59d;
+      }
+      .item9 {
+        background-color: #ffcc80;
+      }
+      .item10 {
+        background-color: #D52C0F;
+ 	}
+      }

@@ -59,5 +59,11 @@ h2 {
   margin-bottom: 15px;
   color: red;
 }
+.click:hover {
+  
+    box-shadow:200px 0 0 0 rgba(0,0,0,0.5) inset;
+
+
+}
 
 

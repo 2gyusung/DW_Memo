@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @font-face {
+        font-family: 'BMYEONSUNG';
+        src: url('BMYEONSUNG_ttf.ttf');
+      }
+
+      * {
+        border: 0;
+        margin: 0;
+        box-sizing: border-box;
+        background-image: url('');
+      }
+      /*배경 부분 */
+      .container {
+        background-color: blanchedalmond;
+        margin: 150px auto 0;
+      }
+      /* */
+      .card {
+        /*display inline-block 가로 배치*/
+        display: inline-block;
+        margin: 20px;
+        border-radius: 8px;
+        height: 400px;
+        width: 260px;
+        /* overflow 컨텐츠가 커서 보이기 힘들 때 사용*/
+        /* visible(기본값)  hidden(넘치는 부분 자름)  scroll(스크롤바 추가)*/
+        overflow: hidden;
+        box-shadow: 0 20px 35px rgba(0, 0, 0, 0.3);
+        padding: 5px;
+        /* 변형*/
+        transform: scale(1);
+        transition: 0.7s;
+      }
+      /* 마우스 */
+      .card:hover {
+        /*손가락 모양 나옴*/
+        cursor: pointer;
+        /* 변형*/
+        transform: scale(0.3);
+      }
+      /* img class*/
+      .card img {
+        width: 260px;
+        height: 260px;
+      }
+      /* 텍스트 div*/
+      .text-wrap {
+        padding: 15px;
+        text-align: left;
+      }
+      /* 텍스트 h1*/
+      .text-wrap h1 {
+        /* 텍스트 굵기*/
+        font-weight: 24px;
+        font-weight: bold;
+        font-family: 'BMYEONSUNG';
+      }
+      /*텍스트 p */
+      .text-wrap p {
+        /**/
+        line-height: 1.8;
+        font-family: 'BMYEONSUNG';
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 컨테이너 객체 -->
+    <div class="container">
+      <!-- 카드 객체 -->
+      <div class="card">
+        <!-- crtl+ space bar 파일 경로 불러오기 -->
+        <img src="파이리.gif" alt="" />
+        <!-- 텍스트 객체 -->
+        <div class="text wrap">
+          <h1>파이리</h1>
+          <p>도룡뇽 포켓몬, 타입은 불꽃이다.</p>
+        </div>
+      </div>
+      <div class="card">
+        <!-- crtl+ space bar 파일 경로 불러오기 -->
+        <img src="꼬북이.jpg" alt="" />
+        <!-- 텍스트 객체 -->
+        <div class="text wrap">
+          <h1>꼬부기</h1>
+          <p>꼬마거북 포켓몬, 타입은 물이다.</p>
+        </div>
+      </div>
+      <div class="card">
+        <!-- crtl+ space bar 파일 경로 불러오기 -->
+        <img src="이상해씨.jpg" alt="" />
+        <!-- 텍스트 객체 -->
+        <div class="text wrap">
+          <h1>이상해씨</h1>
+          <p>씨앗 포켓몬, 타입은 물/독이다.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+* {
+  /* 브라우저 마다 공백(3개 필수적으로 입력 할 것.)*/
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.box-container {
+  width: 20%;
+  height: 300px;
+  border: 10px solid green;
+}
+
+.box-data {
+  /* width 부모 크기 만큼 늘리겠다.*/
+  width: 100%;
+  border: 15px solid yellow;
+}
