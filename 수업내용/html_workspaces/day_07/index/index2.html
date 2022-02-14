@@ -11,23 +11,72 @@
             margin: 0;
            padding: 0;
         }
-        .card-container {
-            /* 배열 */
+        /* 하단 카드 페이지 css*/
+        .card-container-ex {
+          
+          /* 배열 */
+          display: flex;
+          width: 2000px;
+          height: 400px;
+          margin: 250px auto;
+      
+      }
+      .item-ex:nth-child(1) {
+          background-color: rgb(154, 212, 212);
+      }
+      .item-ex:nth-child(2) {
+          background-color: rgb(126, 233, 233);
+      }
+      .item-ex:nth-child(3) {
+        background-color: aquamarine;
+      }
+      .caption-ex {
+          display: none;
+          font-size: 12px;
+            /*      위아래 오른쪽/왼쪽*/
+          margin: 28px 0;
+      }
+      .caption-ex button {
+          border: 5px solid skyblue;
+          border-radius: 30px;
+          background-color: transparent;
+          color: white;
+          padding:8px 18px ;
+          font-size: 14px;
+          
+      }
+      .item-ex  {
+            flex: 1;
+            height: 100%;
+            padding: 25px;
+            color: white;
+            position: relative;
+    } 
+    .item-ex:hover {
+        /* */
+        flex-grow: 0.4;
+        transition: 0.8s;
+    }
+      
+    .item-ex:hover .caption2 {
+            /*none의 반대 block*/
+                display: block;
+
+        
+
+        
+                /* 상단 카드 페이지 css */
+                .card-container {
+            /*item 정렬*/
             display: flex;
-            width: 2000px;
+            width: 1000px;
             height: 400px;
-            margin: 250px auto;
+            /*      위아래 오른쪽/왼쪽*/
+            margin: 100px auto;
+           
         }
 
-        .card-container2 {
-          
-            /* 배열 */
-            display: flex;
-            width: 2000px;
-            height: 400px;
-            margin: 250px auto;
-        
-        }
+
         /* 아이템 배경 색상 주기 */
         .item:nth-child(1) {
             background-color: bisque;
@@ -88,9 +137,7 @@
             margin-top: 20px;
             color: azure;
         }
-        .card-container2 {
-
-        }
+       
     </style>
 </head>
 <body>
@@ -126,26 +173,26 @@
         </div>
 
 
-        <div class="card-container2">
-            <div class="item">
+        <div class="card-container-ex">
+            <div class="item-ex">
                 <h2>크로스 핏</h2>
-                <div class="caption">
+                <div class="caption-ex">
                     <p>크로스 핏 하나 둘 하나 둘</p>
                     <button>예약</button>
                 </div>
                 <img src="img1.png" alt="">
                 </div>
-                <div class="item">
+                <div class="item-ex">
                     <h2>크로스 핏</h2>
-                    <div class="caption">
+                    <div class="caption-ex">
                         <p>크로스 핏 하나 둘 하나 둘</p>
                         <button>예약</button>
                     </div>
                     <img src="img1.png" alt="">
                     </div>
-                    <div class="item">
+                    <div class="item-ex">
                         <h2>크로스 핏</h2>
-                        <div class="caption">
+                        <div class="caption-ex">
                             <p>크로스 핏 하나 둘 하나 둘</p>
                             <button>예약</button>
                         </div>
