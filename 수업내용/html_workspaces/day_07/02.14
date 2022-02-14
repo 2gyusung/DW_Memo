@@ -1,0 +1,12 @@
+     - position
+    static :고정
+    relative : 원래 위치에서 움직임
+    aabsolute : 마음대로 움직임 (부모태그 relative이면 relative 기준으로 움직임)
+    fixed : 고정(스크롤 내릴 떄 마다 따라옴)
+
+    padding : 부모 태그와 자식 태그 간격 조절
+    margin : 부모와 부모 간격 조절
+    box-size : border-box 
+    flex : container 와 item으로 구성 (배열)
+    container의 길이와 item 간격을 유연하게 조절
+    display: flex = inline block
