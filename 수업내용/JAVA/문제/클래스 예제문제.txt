@@ -1,0 +1,29 @@
+1. move():int
+메소드 이름 : move
+인자 값 :  없음 			0
+리턴 값 : int
+
+		2. move(int x):void
+메소드 이름 : move  
+인자 값 :  int 
+리턴 값 : 
+
+3. love(String str):String
+메소드 이름 : love
+인자 값 :  String str
+리턴 값 : String
+
+4. doStudy(int x, String str): int
+메소드 이름 : doStudy
+인자 값 :  int x, String str
+리턴 값 :int
+
+5. help():void
+메소드 이름 : help
+인자 값 :  없음
+리턴 값 :없음
+
+6. help(int x,int y):Pizza
+메소드 이름 : help
+인자 값 :  int x,int y
+리턴 값 :Pizza
