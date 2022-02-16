@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background-color: aqua;
+    }
+    header {
+      background-color: blue;
+      width: auto;
+      height: 55px;
+    }
+    .content {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      background-color: skyblue;
+      margin: 100px auto 0;
+      width: 180px;
+      height: 180px;
+    }
+    .content-text-box {
+      width: 10px;
+      height: 10px;
+      background-color: blue;
+    }
+
+    .content-col {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: space-around;
+      background-color: greenyellow;
+      margin: 100px auto 0;
+      width: auto;
+      height: 180px;
+    }
+
+    .content-text-box-col {
+      width: 10px;
+      height: 10px;
+      background-color: rgba(55, 236, 18, 0.849);
+    }
+    footer {
+      background-color: bisque;
+      width: auto;
+      height: 1000px;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <header></header>
+      <div class="content">
+        <div class="content-text-box"></div>
+        <div class="content-text-box"></div>
+        <div class="content-text-box"></div>
+      </div>
+      <div class="content-col">
+        <div class="content-text-box-col"></div>
+        <div class="content-text-box-col"></div>
+        <div class="content-text-box-col"></div>
+      </div>
+    </div>
+    <footer></footer>
+  </body>
+</html>

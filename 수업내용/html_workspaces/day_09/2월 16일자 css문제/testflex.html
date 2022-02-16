@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flex css 관련 테스트</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      header {
+        background-color: blanchedalmond;
+        width: auto;
+        height: 50px;
+      }
+      .outbox {
+        margin: 80px auto 0;
+        position: relative;
+        width: 600px;
+        height: 500px;
+        background-color: blue;
+        /*부모 위치 가운데 정렬*/
+        display: flex;
+        /*방향 위치 아이템*/
+        align-items: center;
+        justify-content: space-between;
+        /*부모 position :relative*/
+        position: relative;
+      }
+      .inbox {
+        width: 150px;
+        height: 300px;
+        border: coral 3px solid;
+        background-color: skyblue;
+      }
+      .absolute-box {
+        position: absolute;
+        width: 35px;
+        height: 40px;
+        top: 2px;
+        right: 2px;
+        border: chocolate 3px solid;
+        background-color: chocolate;
+      }
+      .absolute-content {
+        position: absolute;
+        width: 35px;
+        height: 40px;
+        bottom: 3px;
+        left: 3px;
+        background-color: aquamarine;
+      }
+      .absolute-content-b {
+        position: absolute;
+        width: 40px;
+        height: 45px;
+        bottom: 3px;
+        right: 3px;
+        background-color: beige;
+      }
+      .absolute-content-c {
+        position: absolute;
+        width: 40px;
+        height: 45px;
+        top: 3px;
+        left: 3px;
+        background-color: blueviolet;
+      }
+      .absolute-content-c:hover {
+        background-color: azure;
+        box-shadow: 4em;
+      }
+      footer {
+        background-color: aquamarine;
+        width: auto;
+        height: 45px;
+        margin-top: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header></header>
+      <div class="outbox">
+        <div class="inbox"></div>
+        <div class="inbox"></div>
+        <div class="inbox"></div>
+        <div class="absolute-box"></div>
+        <div class="absolute-content"></div>
+        <div class="absolute-content-b"></div>
+      </div>
+      <div class="outbox">
+        <div class="inbox"></div>
+        <div class="inbox"></div>
+        <div class="inbox"></div>
+        <div class="absolute-box"></div>
+        <div class="absolute-content"></div>
+        <div class="absolute-content-b"></div>
+        <div class="absolute-content-c"></div>
+      </div>
+    </div>
+    <footer></footer>
+  </body>
+</html>

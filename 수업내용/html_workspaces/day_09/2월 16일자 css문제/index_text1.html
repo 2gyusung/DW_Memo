@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css 테스트 문제 1</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+   
+    /*헤더 부분 추가*/
+   
+    header {
+        background-color: black;
+        width: auto;
+        height: 70px;
+    }
+
+    .outer-box {
+    margin: 80px auto 0;
+    /*부모*/
+    position: relative;
+    width: 500px;
+    height: 500px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+    
+    .inner-box {
+        width: 150px;
+        height: 150px;
+        background-color: red;
+}
+.absoulte-box {
+    /*자식*/
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: beige;
+    top: 10px;
+    right: 10px;
+}
+.absoulte-box2 {
+     /*자식*/
+    position: absolute;
+     /*top에서 7px 이동*/
+    top: 7px;
+    left: 15px;
+    width: 40px;
+    height: 40px;
+    background-color: skyblue;
+    
+}
+
+
+
+
+
+
+</style>
+<body>
+    <div class="container">
+        <header></header>
+        <div class="outer-box">
+            <div class="inner-box"></div>
+                <div class="inner-box"> </div>
+                <div class="absoulte-box"></div>
+                <div class="absoulte-box2"></div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
