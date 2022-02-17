@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .container {
+        background-color: gray;
+        width: auto;
+        height: 450px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        
+        
+    }
+    .container-b {
+        background-color: lightgrey;
+        width: 200px;
+        height: 450px;     
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+     
+        
+    }
+    .box {
+        
+        background-color: blue;
+        width: 45px;
+        height: 100px;  
+        top: 300px;
+        left: 450px;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+
+  
+    header {
+        background-color: blue;
+        width: auto;
+        height: 80px;
+        margin-bottom: 75px;
+    }
+    .box:hover {
+        background-color: aquamarine;
+
+    }
+    .position {
+        background-color: lightblue;
+        width: 35px;
+        height: 35px;
+        position:absolute;
+        bottom: 15px;
+
+    }
+    .position-b {
+        background-color: blue;
+        width: 35px;
+        height: 35px;
+        position:absolute;
+        top: 15px;
+
+    }
+    .position-c {
+        background-color: skyblue;
+        width: 100px;
+        height: 35px;
+        position:absolute;
+        bottom: 10px;
+        left: 250px;
+
+
+    }
+    .position-c:hover {
+     box-shadow:-200px 0 0 0  lightcoral inset;
+
+
+
+    }
+</style>
+<body>
+    
+    <div class="container">
+        <header></header>
+        <div class="container-b">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            
+            
+        </div>
+        <div class="container-b">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+           
+        </div>
+        <div class="container-b">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+        <div class="position"></div>
+        <div class="position-b"></div>
+        <div class="position-c"></div>
+    </div>
+        
+    
+</body>
+</html>

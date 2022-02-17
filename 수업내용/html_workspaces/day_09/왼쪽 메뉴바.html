@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>왼쪽 레이아웃 만들기</title>
+  </head>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    .side-nav {
+      width: 250px;
+      height: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: skyblue;
+      padding: 20px 30px;
+    }
+    /*nav 관련*/
+    .nav-links {
+      list-style: none;
+    }
+    .nav-links li {
+      padding: 10px 0;
+    }
+    .nav-links li:hover {
+      background-color: rgb(159, 202, 219);
+      border-radius: 15px;
+    }
+    .nav-links a {
+      text-decoration: none;
+      color: white;
+    }
+    .nav-links li a i {
+      font-size: 22px;
+      margin-right: 20px;
+    }
+  </style>
+
+  <script
+    src="https://kit.fontawesome.com/ec2e6610a2.js"
+    crossorigin="anonymous"
+  ></script>
+  <body>
+    <div class="container">
+      <div class="header">
+        <!-- div.logo -->
+        <div class="side-nav">
+          <ul class="nav-links">
+            <li>
+              <a href="#"
+                ><i class="fa-solid fa-house-chimney-window"></i>Home</a
+              >
+            </li>
+
+            <li>
+              <a href="#"><i class="fa-solid fa-comment-dots"></i>Messeage</a>
+            </li>
+
+            <li>
+              <a href="#"><i class="fa-solid fa-gear"></i>Settings</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

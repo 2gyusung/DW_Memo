@@ -11,7 +11,7 @@
         margin: 0;
         box-sizing: border-box;
       }
-      /*상단 카드 레이아웃*/
+      
       .header {
         width: 100%;
         height: 100px;
@@ -21,10 +21,10 @@
         width: 75%;
         height: 300px;
         background-color: black;
-        margin: 30px auto 0;
+        margin: 50px auto 0;
         position: relative;
       }
-      .position {
+      .position-box {
           position: absolute;
           width: 50px;
           height: 50px;
@@ -33,9 +33,9 @@
           background-color: rebeccapurple;
           border-radius: 3px;
       }
-      .position-box {
+      .position-box-a {
         position: absolute;
-          width: 40px;
+          width: 50px;
           height: 35px;
           top: 10px;
           left: 7px;
@@ -52,8 +52,27 @@
           background-color: royalblue;
           border-radius: 3px;
       }
+      .position-box-c {
+        position: absolute;
+          width: 40px;
+          height: 35px;
+          bottom: 150px;
+          right: 7px;
+          background-color:skyblue;
+          border-radius: 150px;
+      }
+      .position-box-d {
+        position: absolute;
+          width: 40px;
+          height: 35px;
+          bottom: 150px;
+          left: 7px;
+          background-color:skyblue;
+          border-radius: 150px;
+      }
 
       .row {
+          /*상단 카드 레이아웃*/
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -82,8 +101,9 @@
       <div class="header"></div>
       <div class="section row">
           <div class="position"></div>
-          <div class="position-box"></div>
+          <div class="position-box-a"></div>
           <div class="position-box-b"></div>
+          <div class="position-box-c"></div>
         <div class="card"></div>
         <div class="card"></div>
         <div class="card"></div>
@@ -91,6 +111,10 @@
       <div class="section row-col">
         <div class="card-col"></div>
         <div class="card-col"></div>
+        <div class="position-box-a"></div>
+        <div class="position-box-b"></div>
+        <div class="position-box-c"></div>
+        <div class="position-box-d"></div>
       </div>
     </div>
   </body>
