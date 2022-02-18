@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+
+    <title>OTT 소개</title>
+</head>
+
+<style>
+  
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+  
+    /*flex 클래스 */
+    .row {
+        margin-top: 2%;
+        display: flex;
+        justify-content: space-between;
+     
+
+    }
+    /* gallery 클래스 */
+    .gallery {
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        padding-top: 100px;
+        
+    }
+    /*gallery 소개 글*/
+    .gallery h1 {
+        color: black;
+        font-size: 50px;
+        font-weight: 750;
+        
+    
+    }
+    /*gallery 내용 글*/
+    .gallery  p {
+        color: black;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 35px;
+        padding: 30px;
+        margin-bottom: 70px;
+
+    }
+    /*이미지 position*/
+    .ott-col {
+        /*부모*/
+        position: relative;
+        overflow: hidden;
+        flex-basis: 30%;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        padding: 10px auto 0;
+        
+        
+      
+    }
+    /*이미지 */
+    .ott-col img {
+        width: 100%;
+        height: 90%;
+        border-radius: 10px;
+        opacity: 0.8;
+        
+    }
+    .layer {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: transparent;
+        transition: 0.5s;
+        width: 100%;
+        height: 90%;
+    }
+    .layer h3 {
+        position: absolute;
+        color: rgb(202, 207, 210);
+        font-size: 15px;
+        text-align: center;
+        font-weight: 1000;
+        font-weight: 50;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        opacity: 0;
+        transition: 0.5s;
+     
+    }
+    .layer:hover  h3{
+        bottom: 30%;
+        opacity: 1;
+        transform: scale3d(2, 1.5);
+        text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;"
+    }
+
+
+</style>
+<body>
+    <div class="container">
+        <div class="gallery">
+            <h1>OTT</h1>
+            <p><br> over-the-top media service</br>인터넷을 통해 방송 프로그램·영화·교육 등 각종 미디어 콘텐츠를 제공하는 서비스 </p>
+            <div class="row">
+                <div class="ott-col">
+                    <img src="img/넷플릭스.png" alt=""><a href="https://www.netflix.com/kr/"></a>
+                    <div class="layer"><h3>넷플릭스</h3></div>
+                </div>
+                <div class="ott-col">
+                    <img src="img/디즈니.jpg" alt=""><a href="https://www.disneyplus.com/ko-kr?cid=DSS-Search-Google-71700000088339394-&s_kwcid=AL!8468!3!576497999890!e!!g!!%EB%94%94%EC%A6%88%EB%8B%88%20%ED%94%8C%EB%9F%AC%EC%8A%A4&gclid=CjwKCAiAgbiQBhAHEiwAuQ6BkraxWrpNxZehELIsAJ8nRakR8akwQmoC96MkeU6ejmfc2G7O7wsqLhoC1QUQAvD_BwE&gclsrc=aw.ds"></a>
+                    <div class="layer"><h3>디즈니플러스</h3></div>
+                </div>
+                <div class="ott-col">
+                    <img src="img/wave.jpg.crdownload" alt="">
+                    <div class="layer"><h3>웨이브</h3></div>
+                </div>
+                <div class="ott-col">
+                    <img src="img/유튜브.jpg" alt="">
+                    <div class="layer"><h3>유튜브</h3></div>
+                </div>
+                <div class="ott-col">
+                    <img src="img/tving_Logo.jpg" alt="">
+                    <div class="layer"><h3>티빙</h3></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
