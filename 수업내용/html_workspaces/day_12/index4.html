@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>카드 레이아웃 </title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        }
+
+    .movie {
+    width: 80%;
+    margin: 10px auto 0;
+   
+}
+
+.intro {
+    text-align: center;
+}
+
+.intro h1 {
+    font-size: 36px;
+    font-weight: 600;
+}
+.intro p {
+    color: #777;
+    font-weight: 500;
+    line-height: 22px;
+    margin-top: 10px;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2%;
+    
+}
+.movie-col {
+    /* flex-basis 아이템 크기 지정*/
+    flex-basis: 30%;
+    border-radius: 10px;
+    text-align: left;
+    margin-bottom: 5%;
+}
+.movie-col img {
+    width: 100%;
+    height: 60%;
+}
+.movie-col h3 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+</style>
+<body>
+    <div class="container">
+        <section class="movie">
+            <!-- 소개글 -->
+            <div class="intro">
+                <h1> 3 스파이더맨 캐릭터 소개</h1>
+                <p>스파이더맨 캐릭터 소개글</p>
+            </div>
+            <!-- 사진 박스 -->
+            <div class="row">
+                <div class="movie-col">
+                    <img src="스파이더맨1.PNG" alt="">
+                    <h3>피터 벤저민 파커 1</h3>
+                    <p>토비 맥과이어</p>
+                </div>
+                <div class="movie-col">
+                    <img src="스파이더맨2.png" alt="">
+                    <h3>피터 벤저민 파커 2</h3>
+                    <p>앤드류 가필드</p>
+                </div><div class="movie-col">
+                    <img src="스파이더맨3.PNG" alt="">
+                    <h3>피터 벤저민 파커 3</h3>
+                    <p>톰 홀랜드</p>
+                </div>
+            </div>
+        </section>
+        </div>
+    </div>
+</body>
+</html>
