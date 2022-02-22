@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>배운 내용을 통해 연습</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      animation: chameleon 5s infinite;
+    }
+    .header {
+      width: 100%;
+      height: 100px;
+      background-color: royalblue;
+      display: flex;
+      justify-content: flex-end;
+      position: relative;
+    }
+    .logo {
+      width: 70px;
+      height: 70px;
+
+      background-color: white;
+      position: absolute;
+      text-align: center;
+      top: 5px;
+      left: 0;
+      animation: chameleon 5s infinite;
+    }
+    .logo:hover {
+      background-color: aquamarine;
+    }
+    .list {
+      width: 70px;
+      height: 30px;
+      background-color: white;
+      color: white;
+      margin: 15px 40px 0;
+
+      text-align: center;
+      border-radius: 10px;
+      animation: chameleon 5s infinite;
+      box-shadow: 0 20px 35px rgba(0, 0, 0, 0.3);
+    }
+  
+    .list:hover {
+      background-color: blanchedalmond;
+      cursor: pointer;
+    }
+    .box {
+      width: auto;
+      height: 350px;
+      margin: 150px auto 0;
+      padding-top: 30px;
+      text-align: center;
+      background-color: royalblue;
+      display: flex;
+      justify-content: center;
+      overflow: hidden;
+      box-shadow: 0 20px 35px rgba(0, 0, 0, 0.3);
+    }
+    .box a {
+      text-decoration: none;
+      font-size: 24px;
+      color: white;
+      padding: 15px;
+    }
+    .box:hover {
+      cursor: pointer;
+    }
+    .card {
+      margin: 10px auto 0;
+      border-radius: 8px;
+    }
+
+    .card img {
+      width: 260px;
+      height: 260px;
+      border-radius: 8px;
+    }
+    .card:hover {
+      cursor: pointer;
+      transform: scale(0.5);
+    }
+    .text {
+      padding: 15px;
+      text-align: left;
+    }
+    .text h1 {
+      font-weight: 24px;
+      font-weight: bold;
+    }
+    .text p {
+      line-height: 1.5;
+    }
+    @keyframes chameleon {
+      0% {
+        background: royalblue;
+      }
+      25% {
+        background: skyblue;
+      }
+      50% {
+        background: royalblue;
+      }
+      100% {
+        background: skyblue;
+      }
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="logo">
+          <img src="스파이더맨.jpg" alt="" / width="70px" height="70px">
+        </div>
+        <div class="list">메뉴</div>
+        <div class="list">로그인</div>
+        <div class="list">회원가입</div>
+      </div>
+      <div class="box">
+        <div class="card">
+          <img src="스파이더맨1.PNG" alt="" />
+          <div class="text">
+            <h1>스파이더맨1</h1>
+            <p>스파이더맨1</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="스파이더맨2.png" alt="" />
+          <div class="text">
+            <h1>스파이더맨2</h1>
+            <p>스파이더맨2</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="스파이더맨3.PNG" alt="" />
+          <div class="text">
+            <h1>스파이더맨3</h1>
+            <p>스파이더맨3</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
