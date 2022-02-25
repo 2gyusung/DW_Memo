@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- 검색 태그 관련 -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <!-- 몸체 부분 -->
+  <body>
+    <h1>안녕하세요 이규성입니다</h1>
+    <h2>안녕하세요 이규성입니다</h2>
+    <h3>안녕하세요 이규성입니다</h3>
+    <h4>안녕하세요 이규성입니다</h4>
+    <h5>안녕하세요 이규성입니다</h5>
+    <h6>안녕하세요 이규성입니다</h6>
+    <!-- 링크 이동 -->
+    <a href="https://comic.naver.com/webtoon/weekday">네이버 웹툰 이동</a>
+    <a href="https://github.com/">이규성 깃허브 이동</a>
+    <a href="index2.html">두번째 파일로 이동합니다.</a>
+    <!-- 로그인 창 -->
+    아이디 : <input type="text" placeholder="id" /> 비밀번호 :
+    < type="password" placeholder="password" maxlength="10" />
+    <input type="number" />
+    <input type="file" />
+    <input type="date" />
+
+    <!-- check box -->
+    <h3>Check box</h3>
+    <input type="checkbox" id="바나나" checked/ >
+    <label for="바나나">바나나</label>
+    <input type="checkbox" id="사과" / >
+    <label for="사과">사과</label>
+    <input type="checkbox" id="포도" / >
+    <label for="포도">포도</label>
+
+    <!-- 날짜 -->
+    <input type="date" />
+    <input type="month" />
+    <input type="week" />
+    <input type="time" />
+
+    <!-- 버튼 관련 2가지-->
+    <h3>버튼 만들기</h3>
+    <input type="button" value="로그인 확인" />
+    <button>로그인 확인</button>
+
+    <!-- combosize 만들기-->
+    <h3>선택 박스 만들기</h3>
+    <select name="" id="">
+      <option value="">사이즈를 선택하시오</option>
+      <option value="S">S size</option>
+      <option value="M">M size</option>
+      <option value="L">L size</option>
+    </select>
+    <!-- 이미지박스 만들기-->
+    <h3>이미지 박스 만들기</h3>
+    <a href="https://mail.google.com/mail/u/0/#inbox"
+      ><img src="img.jpg" alt="파이리" /><-메일로 이동합니다.</a
+    >
+
+    <!--문단 태그-->
+    <h3>문단 태그</h3>
+    <p>사람이 지닌 고유한 향기는 사람의 말에서 뿜어져 나온다.</p>
+    <p>오늘<b>점심</b>은 삼겹살 각</p>
+
+    <!--***input 특징 더 알아보기***-->
+    <!--id : 변수 이름(중복 X)-->
+    <!--name : 변수 이름(중복 O)-->
+    <!--value : 서버에 전송할 실제 데이터 / 디폴트 값 /-->
+    <!--placeholeder : 타이핑 할때에 표시 되어 있던 글이 없어짐 /-->
+    <!--readonly : 타이핑 못하고 읽기만 가능/-->
+    <h3>input 특징 더 알아보기</h3>
+    <input type="text" id="userId" name="userId" value="안녕하세요" readonly />
+    <input type="text" id="userId" name="userId" placeholeder="안녕하세요" />
+  </body>
+  <style>
+    a {
+      text-decoration: none;
+    }
+    p {
+      color: #090;
+    }
+    * {
+      text-align: center;
+    }
+  </style>
+</html>
