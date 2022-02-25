@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>배운 내용 복습</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    header {
+      position: relative;
+      height: 500px;
+      width: 100%;
+      background-color: transparent;
+      background-image: url(스파이더맨.jpg);
+      background-position: center;
+      background-size: cover;
+    }
+    .nav {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 2% 6%;
+    }
+    .nav .img {
+      width: 150px;
+      height: auto;
+    }
+    .nav-links ul li {
+      list-style: none;
+      display: inline-block;
+      padding: 8px 12px;
+    }
+    .nav-links ul li a {
+      color: black;
+      text-decoration: none;
+      font-size: 25px;
+      font-weight: bold;
+    }
+    .text-box {
+      width: 90%;
+      color: black;
+      position: absolute;
+      top: 50%;
+      text-align: center;
+      left: 10%;
+    }
+    .text-box h1 {
+      font-size: 60px;
+    }
+    .text-box p {
+      margin-top: 10px;
+      font-size: 16px;
+      margin-bottom: 40px;
+    }
+    /*list hover*/
+    .nav-links ul li:hover {
+      background-color: skyblue;
+      border-radius: 5px;
+      transform: scale(0.7);
+    }
+    .text-box a {
+      border: solid 1px white;
+      text-decoration: none;
+      color: black;
+      font-size: 18px;
+      border-radius: 3px;
+      padding: 12px 15px;
+    }
+    .text-box a:hover {
+      border: 1px solid skyblue;
+      background: skyblue;
+      /*천천히 색이 변함*/
+      transition: 5s;
+    }
+    .section1 table {
+      margin-left: auto;
+      margin-right: auto;
+      width: 80%;
+      color: lightgreen;
+    }
+    .section1 td,
+    .section1 th {
+      border: 1px solid #ddd;
+      padding: 15px;
+    }
+    tr:hover {
+      background-color: lightblue;
+      overflow: hidden;
+    }
+    .section1 th {
+      padding-top: 25px;
+      padding-bottom: 25px;
+      background-color: #04aa6d;
+    }
+    b {
+      color: skyblue;
+      text-shadow: 8ex;
+    }
+    /*card CSS*/
+    .row {
+      display: flex;
+      justify-content: space-around;
+      margin: 50px 15px 0;
+    }
+    .section-card {
+      border-radius: 8px;
+      height: 400px;
+      width: 260px;
+      margin: 0 25px auto;
+      overflow: hidden;
+      box-shadow: 0 100px 35px rgba(0, 0, 0, 0.3);
+    }
+    .section-card img {
+      width: 250px;
+      height: 350px;
+    }
+    .section-card:hover {
+      cursor: pointer;
+      transform: scale(0.3);
+    }
+  </style>
+  <body>
+    <div class="container">
+      <header>
+        <div class="nav">
+          <div class="nav-links">
+            <ul>
+              <li><a href="#">메뉴</a></li>
+              <li><a href="#">로그인</a></li>
+              <li><a href="#">회원가입</a></li>
+              <li><a href="#">장바구니</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="text-box">
+          <h1>배운 내용 작성</h1>
+          <br />
+          <p>
+            배운 내용을 통해 작성 합니다. <b>CSS</b> :Position, margin padding
+            border-box flex
+          </p>
+          <a href="#">더 보기</a>
+        </div>
+      </header>
+      <div class="section1">
+        <table class="customers">
+          <thead>
+            <tr>
+              <th>시간</th>
+              <th>월</th>
+              <th>화</th>
+              <th>수</th>
+              <th>목</th>
+              <th>금</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>09:00 ~ 10:50</td>
+              <td>SQL</td>
+              <td colspan="3">JAVA</td>
+              <td>SQL</td>
+            </tr>
+            <tr>
+              <td>10:00 ~ 10:50</td>
+              <td colspan="5">HTML & CSS</td>
+            </tr>
+            <tr>
+              <td>11:00 ~ 11:50</td>
+              <td colspan="2">SQL</td>
+              <td>JAVA</td>
+              <td colspan="2">SQL</td>
+            </tr>
+            <tr>
+              <td>12:00 ~ 12:50</td>
+              <td colspan="2">CSS</td>
+              <td>JAVA</td>
+              <td colspan="2">CSS</td>
+            </tr>
+            <tr>
+              <td>13:40 ~ 14:30</td>
+              <td colspan="2">SQL</td>
+              <td>JAVA</td>
+              <td colspan="2">SQL</td>
+            </tr>
+            <tr>
+              <td>13:40 ~ 14:30</td>
+              <td colspan="2">SQL</td>
+              <td>JAVA</td>
+              <td colspan="2">SQL</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="row">
+        <div class="section-card">
+          <img src="스파이더맨1.PNG" alt="" />
+          <div class="text-wrap">
+            <h1>aaaaa</h1>
+            <p>aaaaa</p>
+          </div>
+        </div>
+        <div class="section-card">
+          <img src="스파이더맨2.png" alt="" />
+          <div class="text-wrap">
+            <h1>aaaaa</h1>
+            <p>aaaaa</p>
+          </div>
+        </div>
+        <div class="section-card">
+          <img src="스파이더맨3.PNG" alt="" />
+          <div class="text-wrap">
+            <h1>aaaaa</h1>
+            <p>aaaaa</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
