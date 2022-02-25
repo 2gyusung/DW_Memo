@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+           padding: 0;
+        }
+        .card-container {
+            /* 배열 */
+            display: flex;
+            width: 1000px;
+            height: 400px;
+            margin: 100px auto;
+        }
+        /* 아이템 배경 색상 주기 */
+        .item:nth-child(1) {
+            background-color: bisque;
+        }
+        /* 아이템 배경 색상 주기 */
+        .item:nth-child(2) {
+            background-color: rgb(236, 211, 181);
+        }
+        /* 아이템 배경 색상 주기 */
+        .item:nth-child(3) {
+            background-color: rgb(212, 190, 162);
+        }
+        /* 아이템 제목 글자 css */
+        .item h2 {
+            font-size: 24px;
+            font-weight: bold;
+            text-align: right;
+        }
+        /* 글자 설명 숨기기 */
+        .caption {
+            display: none;
+        }
+        /* 이미지 태그  */
+        .item img {
+            width: 250px;
+            /*   */
+            position: absolute;
+        }
+        .item:hover {
+            /* 마우스 갖다 대면 늘어 나는 것 */
+            flex-grow: 4;
+            transition: 0.5s;
+        }
+    /*마우스 효과 할떄 글자 보임*/
+        .item:hover .caption {
+            display: block;
+        }
+        .item {
+            /*배경 동일한 크기 아이템 만들어줌*/
+            flex: 1;
+            height: 100%;
+            padding: 25px;
+            color: rgba(139, 118, 118, 0.726);
+            position: relative;
+        }
+        .caption button {
+            border: 3px soild white;
+            border-radius: 35px;
+            background-color: transparent;
+            padding :8px 18px;
+            font-size: 14px;
+            cursor: pointer;
+            margin-top: 20px;
+            color: azure;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card-container">
+            <div class="item">
+                <h2>크로스 핏</h2>
+                <div class="caption">
+                    <p>크로스 핏 하나 둘 하나 둘</p>
+                    <button>예약</button>
+                </div>
+                <img src="img1.png" alt="">
+                </div>
+                    
+                <div class="item">
+                    <h2>헬스</h2>
+                    <div class="caption">
+                        <p>헬스 하나 둘 하나 둘</p>
+                        <button>예약</button>
+                    </div>
+                    <img src="img2.png" alt="">
+                    </div>
+                
+                    <div class="item">
+                        <h2>요가</h2>
+                        <div class="caption">
+                            <p>요가 하나 둘 하나 둘</p>
+                            <button>예약</button>
+                        </div>
+                        <img src="img3.png" alt="">
+                        </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
