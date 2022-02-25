@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>웹 사이트</title>
+  </head>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    /*header 관련 css*/
+    header {
+      /*부모 태그*/
+      position: relative;
+      
+      /* 먼저 background-color를 이용해 크기 조절 할 것*/
+      /*조절 후 background-color는 주석처리 혹은 삭제*/
+      height: 500px;
+      width: 100%;
+      background-color:transparent;
+     background-image: url(pexels-luis-dalvan-4052678.jpg);
+        
+      background-position: center;
+      background-size: cover;
+    }
+    .nav {
+      display: flex;
+      padding: 2% 6%;
+      justify-content: flex-end;
+      align-items: center;
+    }
+    .nav .img {
+      width: 150px;
+      height: auto;
+      
+    }
+    /*display 글자 태그*/
+    .nav-links ul li {
+      list-style: none;
+      display: inline-block;
+      padding: 8px 12px;
+    }
+    /*글자 폰트 태그*/
+    .nav-links ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 25px;
+      font-weight: bold;
+    }
+    
+    .text-box {
+      width: 90%;
+      color: white;
+      /* 자식*/
+      position: absolute;
+      top: 50%;
+      text-align: center;
+      
+      left: 10%;
+    }
+    .text-box h1 {
+      font-size: 60px;
+      
+    }
+    .text-box p {
+      margin-top: 10px;
+      font-size: 16px;
+      margin-bottom: 40px;
+    }
+    
+    .nav-links ul li:hover {
+      background-color: skyblue;
+      border-radius: 5px;
+       transform: scale(0.7);
+    }
+    .text-box a {
+      border: solid 1px white;
+      text-decoration: none;
+      color: white;
+      font-size: 18px;
+      border-radius: 3px;
+      padding: 12px 15px;
+    }
+    .text-box a:hover {
+      border: 1px solid skyblue;
+      background: skyblue;
+      transition: 1s;
+    }
+    /*테이블 관련 css*/
+    .section1 {
+      border-collapse: collapse;
+      width: 100%;
+    display: flex;
+    justify-content: space-between;
+        align-items: center;
+     margin:50px auto 0;
+     width : 80%;
+     
+    }
+    .section1 table {
+      margin-left: auto;
+     margin-right: auto;
+     width : 80%;
+
+    }
+    .section1  td , .section1 th{
+        border: 1px solid #ddd;
+        padding: 15px;
+        
+    
+
+    }
+     tr :hover {
+      background-color: skyblue;
+     overflow: hidden;
+    }
+    .section1 th {
+      padding-top: 25px;
+      padding-bottom: 25px;
+     
+      background-color: #04aa6d;
+      color: white;
+    }
+    .section1 th:hover{
+      background-color: skyblue;
+    }
+    b {
+      color: skyblue;
+      text-shadow: 8ex;
+    }
+    /*카드 페이지 관련 css*/
+    .section-card {
+      display: inline-block;
+      
+        
+        border-radius: 8px;
+        height: 400px;
+      width: 260px; 
+	margin: 0  25px auto;
+        /* overflow 컨텐츠가 커서 보이기 힘들 때 사용*/
+        /* visible(기본값)  hidden(넘치는 부분 자름)  scroll(스크롤바 추가)*/
+        overflow: hidden;
+        box-shadow: 0 100px 35px rgba(0, 0, 0, 0.3);
+        padding: 25px;
+        /* 변형*/
+        transform: scale(1);
+        transition: 0.7s;
+        
+     
+    }
+     .text-wrap {
+          padding: 15px;
+        text-align: left;
+        padding: 10px auto 0;
+       
+        
+      }
+      .section-card img {
+        width: 235px;
+        height: 280px;
+     
+      }
+    .section-card:hover {
+        cursor: pointer;
+        /* 변형*/
+        transform: scale(0.3);
+      }
+  </style>
+  <body>
+    <div class="container">
+      <!-- == div class header -->
+      <header>
+        <!-- 로고 / 메뉴 -->
+        <div class="nav">
+          <!-- 로고 이미지-->
+        <!--  <div class="img"><img src="nike.jpg" alt="나이키" width="170" height="70"></div> -->
+          <!--메뉴 -->
+          <div class="nav-links">
+            <!-- (ul>li*5 -->
+            <!-- x(취소) 버튼 태그 -->
+            <ul>
+              <li><a href="#">Position</a></li>
+              <li><a href="#">Margin</a></li>
+              <li><a href="#">Padding</a></li>
+              <li><a href="#">Border-box</a></li>
+              <li><a href="#">Flex</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="text-box">
+          <!-- 제목 태그 -->
+          <h1>수업 내용</h1>
+          <!-- 문단 태그 -->
+          <br><p>배운 내용을 통해 작성합니다</br>
+       <b>CSS</b> : Position margin padding border-box flex</p>
+           
+          <!-- 링크 태그를 마치 버튼처럼 꾸밀 예정 -->
+          <a href="https://github.com target = _blank">이규성 깃허브</a>
+           <!-- <a href="#">자세히 보기</a>-->
+        </div>
+      </header>
+      <div class="section1">
+        <table class="customers">
+        <!-- 시간표 -->
+        <thead>
+        <tr>
+          <th>시간</th>
+          <th>월</th>
+          <th>화</th>
+          <th>수</th>
+          <th>목</th>
+          <th>금</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+        <td>09:00 ~ 09:50</td>
+        <td>SQL</td>
+        <td colspan="3">JAVA</td>
+        <td>SQL</td>
+      </tr>
+      <tr>
+        <td>10:00 ~ 10:50</td>
+        <td colspan="5">HTML & CSS</td>
+      </tr>
+      <tr>
+        <td>11:00 ~ 11:50</td>
+        <td colspan="2">SQL</td>
+        <td>JAVA</td>
+        <td colspan="2">SQL</td>  
+      </tr>
+      <tr>
+        <td>12:00 ~ 12:50</td>
+        <td colspan="2">CSS</td>
+        <td>JAVA</td>
+        <td colspan="2">CSS</td>
+
+      </tr>
+      <tr>
+        <td>13:40 ~ 14:30</td>
+        <td colspan="2">SQL</td>
+        <td>JAVA</td>
+        <td colspan="2">SQL</td>
+       </tr>
+       <tr>
+        <td>14:40 ~ 15:30</td>
+        <td colspan="5">문제풀이시간</td>
+       </tr>
+      </tbody>
+    </table>
+        </div>
+      </div>
+      <div class="section-card">
+        <!-- 카드 레이아웃 -->
+        <img src="img.png" alt="" width="260" height="260" />
+        <div class="text wrap">
+          <h1>HTML</h1>
+          <p>하이퍼 텍스트 마크업 언어는 웹 페이지를 위한 지배적인 마크업 언어다. 또한, HTML은 제목, 단락, 목록 등과 같은 본문을 위한 구조적 의미를 나타내는 것뿐만 아니라 링크, 인용과 그 밖의 항목으로 구조적 문서를 만들 수 있는 방법을 제공한다.</p>
+        </div>
+</div>
+   <div class="section-card">
+        <!-- 카드 레이아웃 -->
+        <img src="css3.png" alt="" width="280" height="230" />
+        <div class="text wrap">
+          <h1>CSS</h1>
+          <p>종속형 시트 또는 캐스케이딩 스타일 시트는 마크업 언어가 실제 표시되는 방법을 기술하는 스타일 언어로, HTML과 XHTML에 주로 쓰이며, XML에서도 사용할 수 있다. W3C의 표준이며, 레이아웃과 스타일을 정의할 때의 자유도가 높다. 기본 파일명은 style.css이다.</p>
+        </div>
+</div>
+   <div class="section-card">
+        <!-- 카드 레이아웃 -->
+        <img src="js.png" alt="" width="260" height="260" />
+        <div class="text wrap">
+          <h1>자바 스크립트</h1>
+          <p>자바스크립트는 객체 기반의 스크립트 프로그래밍 언어이다. 이 언어는 웹 브라우저 내에서 주로 사용하며, 다른 응용 프로그램의 내장 객체에도 접근할 수 있는 기능을 가지고 있다. 또한 Node.js와 같은 런타임 환경과 같이 서버 프로그래밍에도 사용되고 있다.</p>
+        </div>
+</div>
+      </div>
+      
+    </div>
+  </body>
+</html>
