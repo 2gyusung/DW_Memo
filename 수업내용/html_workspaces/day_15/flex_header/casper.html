@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .headimg {
+      width: 200px;
+      height: 150px;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    body {
+      background-color: black;
+    }
+    .mainmenubar {
+      display: flex;
+      justify-content: space-evenly;
+      margin: 20px auto 0;
+    }
+    .mainmenubar li {
+      color: white;
+      list-style: none;
+    }
+    .text-box a {
+      text-decoration: none;
+      border: 1px solid white;
+      background-color: darkblue;
+    }
+    .BOX {
+      position: absolute;
+      top: 50px;
+    }
+    .text {
+      position: absolute;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="header">
+        <ul class="mainmenubar">
+          <div class="headimg">
+            <img src="logo-casper-white.028f418.png" alt="" />
+          </div>
+          <li><a href="#"></a>소개</li>
+          <li><a href="#"></a>체험</li>
+          <li><a href="#"></a>구매</li>
+          <li><a href="#"></a>고객지원</li>
+        </ul>
+      </div>
+      <div class="BOX">
+        <video
+          controls
+          autoplay
+          muted
+          src="https://casper.hyundai.com/wcontents/video/main_KV.mp4"
+        ></video>
+        <div class="text-box">
+          <h1>CASPER</h1>
+          <p>오직 캐스퍼 온라인에서만 구매하실 수 있습니다.</p>
+          <div class="text">
+            <a href="#">나만의 캐스퍼 만들기</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
