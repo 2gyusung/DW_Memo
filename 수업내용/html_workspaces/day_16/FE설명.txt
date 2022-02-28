@@ -1,0 +1,15 @@
+html css javaScript 
+*SCSS (기존 CSS 버전 업)
+javaScript  버전 업이 진행 속도가 빠름
+- 팝업 창 구현 서버 데이터 처리
+javaScript 5 (범용성)
+*REACT(Meta) Angular Vue (버전 6 이상을 구현된 자바스크립트)
+
+공부 순서
+자바스크립트 5
+Node.js 설치 이후 
+
+- 실행 방법
+
+1 . node js  사이트 들어 가고 설치 이후 cmd 창에서 node -v 입력 후 엔터 
+2 . javaScript 폴더 생성 후  코드 입력 후 파일명(ex node + index + tab 키) 실행 
