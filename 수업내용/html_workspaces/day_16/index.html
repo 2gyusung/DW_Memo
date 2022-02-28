@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card-layout</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .container {
+      background-color: whitesmoke;
+      margin: 150px auto 0;
+    }
+    .card {
+      display: inline-block;
+      margin: 20px;
+      height: 400px;
+      border-radius: 8px;
+      width: 260px;
+      overflow: hidden;
+      box-shadow: 0 20px 35px rgba(0, 0, 0, 0.3);
+      padding: 5px;
+      transform: scale(1);
+      transition: 00.7s;
+    }
+    .card:hover {
+      cursor: pointer;
+      transform: scale(0.3);
+    }
+    .card img {
+      width: 260px;
+      height: 260px;
+    }
+    .text-wrap {
+      padding: 15px;
+      text-align: left;
+    }
+    .text-wrap h1 {
+      font-weight: 24px;
+      color: white;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="card">
+        <img src="스파이더맨1.PNG" alt="" />
+        <div class="text-wrap">
+          <h1>스파이더맨</h1>
+          <p>스파이더맨</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="스파이더맨1.PNG" alt="" />
+        <div class="text-wrap">
+          <h1>스파이더맨</h1>
+          <p>스파이더맨</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="스파이더맨1.PNG" alt="" />
+        <div class="text-wrap">
+          <h1>스파이더맨</h1>
+          <p>스파이더맨</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

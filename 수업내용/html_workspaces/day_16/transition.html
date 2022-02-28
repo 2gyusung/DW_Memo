@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        width:70px;
+        height: 50px;
+        background-color: skyblue;
+        margin-bottom: 10px;
+        
+        transition-property:  width, background-color; /* 어떤 CSS 프로퍼티를 transition 할지 지정*/
+        transition-duration: 3s, 2s; /*width, bg-color가 2초동안 변화*/
+
+    }
+    .container:hover {
+        width: 100%;
+        background-color: royalblue;
+    }
+</style>
+<body>
+    <div class="container"></div>
+    <div class="container"></div>
+    <div class="container"></div>
+</body>
+</html>
