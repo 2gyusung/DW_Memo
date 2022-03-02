@@ -31,5 +31,30 @@ var information  = {
     else {
         console.log("조회가 안됩니다.")
     }
-  
+    //상수
+    const PI = 3.14;
+    //배열
+    var array = [1,3,4,5,10];
+    console.log(array[0]); // 배열 0번째 값 호출
+    var len = array.length;// 배열 길이
+    const EVEN = 2;
+    //짝수 구하기
+    for(var i = 0; i<len; i++ ) {
+        var value = array[i];
+            if(value%EVEN == 0) {
+                console.log(value);
+            }
+        }
+
+        //최댓값 구하기
+        var max = 0;
+      for(var i=0; i<len; i++) {
+          if (max < array[i]) {
+              max = array[i];
+          }
+
+      }
+      console.log ('최댓값은 ==> ' +max);
+    
+
   
