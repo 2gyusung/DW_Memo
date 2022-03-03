@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background: url('포켓몬볼.png');
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    .header {
+      margin: 40px auto 0;
+      width: 85px;
+      height: 205px;
+    }
+    .section {
+      /*grid 2차원 UI*/
+      display: grid;
+      /* repeat() : grid 안에 있는 아이템들 전부 크기 조절
+           repeat(x, y) : x 는 반복 횟수
+                          y 값(크기에 대한)
+           minmax() : 최소 크기와 최대 크기 조절
+            fr(fraction): flex : 1와 동일
+        */
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-gap: 50px;
+      width: 80%;
+      height: 1000px;
+      margin: 30px auto 0;
+      gap: 35px 40px;
+    }
+    .item {
+      width: 100%;
+      height: 400px;
+      background-color: white;
+      margin-top: 100px;
+      border: 2px solid transparent;
+      box-shadow: 2px 2px 2px 0px;
+    }
+    /*아이템 이미지 크기 조절*/
+    .item img {
+      width: 100%;
+      height: 200px;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="header">
+        <img src="P5520_320_320.jpg" alt="포켓몬" width="150px" height="250x" />
+      </div>
+      <div class="section">
+        <div class="item">
+          <img src="꼬북이.jpg" alt="" />
+          <div class="item-text">
+            <h1>꼬북이</h1>
+            <p>
+              꼬마 거북 포켓몬, 타입은 물이다.
+              <a href="#">더 보기</a>
+            </p>
+          </div>
+        </div>
+        <div class="item">
+          <img src="파이리.gif" alt="" />
+          <div class="item-text">
+            <h1>파이리</h1>
+            <p>
+              도룡뇽 포켓몬, 타입은 불꽃이다.
+              <a href="#">더 보기</a>
+            </p>
+          </div>
+        </div>
+        <div class="item">
+          <img src="고라파덕.png" alt="" />
+          <div class="item-text">
+            <h1>고라파덕</h1>
+            <p>
+              언제나 두통에 시달린다.
+              <a href="#">더 보기</a>
+            </p>
+          </div>
+        </div>
+        <div class="item">
+          <img src="이상해씨.jpg" alt="" />
+          <div class="item-text">
+            <h1>이상해씨</h1>
+            <p>
+              씨앗 포켓몬, 물/독이다.
+              <a href="#">더 보기</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="피카츄.png" alt="" />
+          <div class="item-text">
+            <h1>피카츄</h1>
+            <p>
+              만들어 내는 전기가 강력한 피카츄
+              <a href="#">더 보기</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="삐삐.png" alt="" />
+          <div class="item-text">
+            <h1>삐삐</h1>
+            <p>
+              보름달 밤에 삐삐가 모여 춤을 추면 행복해진다.
+              <a href="#">더 보기</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
