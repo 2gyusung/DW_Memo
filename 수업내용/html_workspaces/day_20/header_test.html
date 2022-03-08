@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .header {
+      width: 100%;
+      background-color: black;
+      display: flex;
+      justify-content: space-between;
+    }
+    .row {
+      flex-basis: 30%;
+      padding: 2%;
+    }
+    .row button {
+      font-size: 36px;
+      border: none;
+      padding: 14px 16px;
+      background-color: transparent;
+      color: white;
+    }
+    .row-content {
+      display: none;
+
+      position: absolute;
+      width: 160px;
+      background-color: white;
+    }
+    .row-content a {
+      display: block;
+      padding: 12px 16px;
+      text-decoration: none;
+      text-align: left;
+      color: black;
+    }
+    .row:hover .row-content {
+      display: block;
+      transition: 0.5s;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="row">
+          <button>dropdown</button>
+          <div class="row-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </div>
+
+        <div class="row">
+          <button>dropdown2</button>
+          <div class="row-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </div>
+
+        <div class="row">
+          <button>dropdown3</button>
+          <div class="row-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </div>
+
+        <div class="row">
+          <button>dropdown4</button>
+          <div class="row-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
