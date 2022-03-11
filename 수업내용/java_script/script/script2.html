@@ -36,9 +36,9 @@
         <button>ALL CLEAR</button>
       </div>
       <div class="form">
-        <input id="userPassword" type="password" value="" />
+        <input id="userpassword" type="password" value="" />
         <input
-          id="userPassword2"
+          id="userpassword2"
           type="password"
           value=""
           onkeyup="checkUserId()"
@@ -48,8 +48,8 @@
     <script>
       // 비밀번호 일치
       function checkUserId() {
-        var password = document.getElementById('userPassword').value;
-        var password2 = document.getElementById('userPassword2').value;
+        var password = document.getElementById('userpassword').value;
+        var password2 = document.getElementById('userpassword2').value;
         if (password == password2) {
           confirm('비밀번호 일치');
         }

@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.row {
+  display: flex;
+  justify-content: space-around;
+}
+.item {
+  flex-basis: 30%;
+  height: 500px;
+  background-color: white;
+  border: 3px solid black;
+}
+/* 어노테이션 */
+/* 반응형 웹 */
+@media (max-width: 700px) {
+  .row {
+    flex-direction: column;
+  }
+}
