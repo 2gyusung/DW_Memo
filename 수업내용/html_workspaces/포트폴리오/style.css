@@ -1,0 +1,284 @@
+/*root :최상 계층, 부모*/
+:root {
+  /*자주 사용하는 color 모음*/
+  /*자주 사용하는 color 변수 */
+  /* 변수 이름을 활용함 */
+  --mainColor: #eaeaea;
+  --secondaryColor: #fff;
+  --borderColor: #c1c1c1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* h3 - h6 공동처리(전역변수 개념)*/
+h3,
+h6 {
+  font-weight: 500;
+}
+
+.section {
+  /*root*/
+  background-color: var(--mainColor);
+  /*root*/
+  border-bottom: 1px solid var(--borderColor);
+}
+
+.project-container {
+  width: 1200px;
+  /*위 아래 없고 왼,오 자동으로 맞추기*/
+  margin: 0 auto;
+}
+
+.project-container h3 {
+  font-size: 28px;
+  text-align: center;
+  margin: 28px 0;
+}
+
+.post-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 280px);
+  gap: 20px;
+}
+
+.post img {
+  width: 100%;
+  height: 200px;
+  /*사진 꺠짐 방지*/
+  object-fit: cover;
+
+  /**/
+}
+.post-preview {
+  background-color: var(--secondaryColor);
+  padding: 5%;
+}
+.post-preview h6 {
+  font-size: 16px;
+  font-weight: 600px;
+  color: black;
+}
+.post-preview p {
+  color: #4b5156;
+  font-size: 14px;
+  margin: 14px 0;
+  font-family: 'Gideon Roman', cursive;
+}
+.post-preview a {
+  text-decoration: none;
+  color: #17a2b8;
+}
+.post {
+  border: 1px solid var(--borderColor);
+  border-radius: 5px;
+  box-shadow: -2px 7px 12px -9px rgba(0, 0, 0, 0.75);
+}
+
+/*  */
+/*section-about.html*/
+
+.main-container {
+  width: 1200px;
+  height: 615px;
+  margin: 0 auto;
+}
+/* display */
+.about-wrapper {
+  padding: 50px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.about-me {
+  width: 550px;
+  height: auto;
+}
+.about-me p {
+  margin: 16px 0;
+}
+.about-me h4 {
+  font-size: 24px;
+  margin: 32px 0;
+}
+/* display */
+.skills {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: skyblue;
+  border-radius: 10px;
+}
+.skills ul {
+  list-style: none;
+  padding-left: 40px;
+  padding: 16px 0;
+}
+.skills ul li {
+  color: black;
+}
+.social-link {
+  width: 550px;
+  height: auto;
+}
+.social-link img {
+  width: 100%;
+  border-radius: 5px;
+  height: auto;
+  /* 화질 꺠짐 방지 */
+  object-fit: cover;
+}
+.social-link h3 {
+  text-align: center;
+  margin: 28px 0;
+  font-size: 28px;
+}
+.github {
+  text-align: center;
+}
+.github a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #17a2b8;
+}
+
+/*  */
+/* header.html */
+header {
+  background-color: var(--mainColor);
+  border-bottom: var(--borderColor);
+}
+
+.greeting-wrapper {
+  padding: 46px 0;
+}
+.greeting-wrapper h1 {
+  text-align: center;
+  font-size: 56px;
+}
+
+.intro-wrapper {
+  background-color: #fff;
+  border: 1px solid var(--borderColor);
+  /* border 위 왼쪽 위 오른쪽 아래 오른쪽 아래 왼쪽 */
+  border-radius: 5px 5px 0 0;
+  box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* 지역별로 4등분       1           2             3                4*/
+  grid-template-areas: 'nav-wrapper nav-wrapper' 'info-wrapper do-wrapper';
+}
+.nav-wrapper {
+  width: 100%;
+  grid-area: nav-wrapper;
+  border-bottom: 1px solid var(--borderColor);
+  background-color: var(--mainColor);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* id : # class : . */
+#dot-1 {
+  background-color: #fc6058;
+}
+#dot-2 {
+  background-color: #fec02f;
+}
+#dot-3 {
+  background-color: #2aca3e;
+}
+/* dot : 맥북 종료 축소 확대 버전 */
+.dot {
+  cursor: pointer;
+  background-color: black;
+  height: 15px;
+  width: 15px;
+  margin: 8px;
+  box-shadow: -1px -1px 3px -1px rgba(0, 0, 0, 0.75);
+  transition: 0.3s;
+}
+.dot :hover {
+  transform: scale(2);
+}
+.dots-wrapper {
+  display: flex;
+  padding: 10px;
+}
+.info-wrapper {
+  grid-area: info-wrapper;
+  padding: 30px 0;
+}
+.info-wrapper img {
+  display: block;
+  width: 230px;
+  height: auto;
+  object-fit: cover;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+.info-wrapper h5 {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.do-wrapper {
+  grid-area: do-wrapper;
+  padding: 50px 10px;
+}
+.dot-wrapper {
+  grid-area: do-wrapper;
+  padding: 50px 10px;
+}
+
+.preview-shadow {
+  background-color: #f0ead6;
+  width: 330px;
+  /*preview  (밖으로)옆으로 밀기*/
+  padding-left: 30px;
+  padding-top: 30px;
+}
+
+.preview {
+  width: 330px;
+  border: 1.5px solid #17a2b8;
+  background-color: rgba(251, 249, 243, 0.8);
+  padding: 15px;
+  position: relative;
+}
+
+.corner {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  border: 1.5px solid #17a2b8;
+  background-color: #fff;
+  position: absolute;
+}
+
+#corner-tl {
+  top: -5px;
+  left: -5px;
+}
+#corner-tr {
+  top: -5px;
+  right: -5px;
+}
+#corner-br {
+  bottom: -5px;
+  right: -5px;
+}
+#corner-bl {
+  bottom: -5px;
+  left: -5px;
+}
+
+.preview h3 {
+  font-size: 28px;
+  margin: 28px 0;
+}
+.preview p {
+  font-size: 18px;
+  color: #4b5156;
+  margin: 16px 0;
+}
