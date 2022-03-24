@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style></style>
+  <body>
+    <!-- Json : 서로 주고 받을때 데이터 형식(포멧)  -->
+    <!-- key 와 value 로 구성  -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      // json
+      $(function () {
+        var jsonData = {
+          name: "포항 아줌마",
+          age: 40,
+          addr: "포항",
+          family: {
+            dad: "신형만",
+            mon: "봉미선"
+          }
+        };
+       
+        // 접근
+        console.log(jsonData.name);
+        console.log(jsonData.family.dad);  //json안에 json 데이터 접근
+
+       
+       
+       
+       
+        // 배열안에 있는 json 
+        var jsonData2 = [{name: '짱구',family:{dad: "신형만",
+            mon: "봉미선"}},{name : '유리'},{name : '맹구'}];
+
+
+
+        // 전체 출력
+        console.log(jsonData2);
+
+
+
+        // 신형만 출력
+        console.log(jsonData2[0].family.dad);
+
+
+      
+        // 총합 더하기(배열 나올 때 for문으로 할 것)
+        // 기초 버젼
+      var jsonData3 = [{sal : 3000}, {sal : 5000}, {sal : 4400} , {sal : 2300}];
+      var num = 0;
+      
+      for(var i = 0; i<jsonData3.length; i++) {
+        num += jsonData3[i].sal;
+      }
+      console.log(num);
+
+
+
+      // 총합 더하기(배열 나올 때 for문으로 할 것)
+      // 상위 버젼
+      var jsonData4 = [{sal : 2500}, {sal :3000}, {sal :2550}, {sal :2700}];
+      var num2 = 0;
+      jsonData4.forEach(function(element) {
+        num2 += element.sal;
+      });
+      console.log("총합은 : " + num2);
+
+
+  // 문제
+  var jsonData5 = {name : "보노보노", 
+                addr : "보노보노숲", 
+                friend : ['너부리','포로리','야옹이형'],
+                family : [{name : '보노보노아빠', age : 34},{name : '보노보노엄마', age : 30}],
+                hobby : "낮잠"
+}
+// 전체 출력
+console.log(jsonData5)
+
+// 문제1 friend 길이를 구하시오.
+// Object.keys(jsonData5.friend).length;
+console.log(jsonData5.friend.length);
+
+// 문제2 family 나이를 계산
+var num3 = 0;
+for(var i = 0; i<jsonData5.family.length; i++) {
+        num3 += jsonData5.family[i].age;
+
+      };
+      console.log("총합은 : " + num3);
+  // 
+
+
+// 문제3 보노보노 취미를 낮잠에서 수영으로 변경.
+
+jsonData5.hobby = "수영";
+
+// 문제4 saying이라는 key 추가하고 value 에 '포로로 놀자'를 추가 하시오.
+
+    });
+    </script>
+  </body>
+</html>
