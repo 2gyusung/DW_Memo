@@ -8,7 +8,7 @@
 
 body {
   margin: 0;
-  background-color: #1BBC9B;
+  background-color: lightblue;
 }
 
 .login-form {
@@ -30,7 +30,7 @@ body {
 
 .submit-btn {
   font-size: 14px;
-  background-color: #1bbc9b;
+  background-color: lightblue;
   color: white;
   padding: 10px;
   border: none;

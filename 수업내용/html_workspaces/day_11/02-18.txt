@@ -1,0 +1,14 @@
+벡엔드 관련 수업은 카멜 표기법 이용
+프론트 user - name 
+리엑트는 카멜 표기법으로 이용
+
+이미지 위치 경로
+
+../img/사진이름 : .. 이 뒤로 가기
+
+문제
+html 경로
+html/workspace/day01/index.html
+../../img/증명사진
+
+html/img/증명사진.png

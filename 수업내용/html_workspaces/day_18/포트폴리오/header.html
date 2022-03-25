@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <style>
+    /*  제목 태그 효과 */
+    span {
+      /*inline-block 입력 해줘야  애니메이션 실행이 가능 하다.*/
+      display: inline-block;
+      animation: waivy 1.5s infinite;
+      /* 검색 할 것 */
+      animation-delay: calc(0.1s * var(--2));
+    }
+    @keyframes waivy {
+      0%,
+      40%,
+      100% {
+        transform: translatex(0);
+      }
+      20% {
+        transform: translateY(-20px);
+      }
+    }
+  </style>
+  <body>
+    <header>
+      <div class="main-container">
+        <!--greeting-wrapper :인사 글  -->
+        <div class="greeting-wrapper">
+          <h1>
+            <span style="--2: 1"> H </span>
+            <span style="--2: 2"> e </span>
+            <span style="--2: 3">l</span>
+            <span style="--2: 4">l</span>
+            <span style="--2: 5">o</span>
+
+            <span style="--2: 6">W</span>
+            <span style="--2: 7">o</span>
+            <span style="--2: 8">r</span>
+            <span style="--2: 9">l</span>
+            <span style="--2: 10">d</span>
+            <span style="--2: 11">!</span>
+          </h1>
+        </div>
+        <!--intro-wrapper :본인 소개 -->
+        <div class="intro-wrapper">
+          <!-- grid -->
+          <div class="nav-wrapper">
+            <div class="dots-wrapper">
+              <div id="dot-1" class="dot"></div>
+              <div id="dot-2" class="dot"></div>
+              <div id="dot-3" class="dot"></div>
+            </div>
+          </div>
+
+          <!-- 내 정보 -->
+          <div class="info-wrapper">
+            <img src="버즈.png" alt="" />
+            <h5>Gyusung Lee</h5>
+          </div>
+          <!-- 뭘 하는지 -->
+          <div class="do-wrapper">
+            <div class="preview-shadow">
+              <div class="preview">
+                <div id="corner-tl" class="corner"></div>
+                <div id="corner-tr" class="corner"></div>
+                <h3>What i do</h3>
+                <p>JavaScript 와 AWS를 주로 다룹니다.</p>
+                <div id="corner-br" class="corner"></div>
+                <div id="corner-bl" class="corner"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+  </body>
+</html>

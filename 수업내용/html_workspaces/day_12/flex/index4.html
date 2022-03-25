@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        section {
+            width: 80%;
+            height: 200px;
+            background-color: black;
+            margin: auto;
+            margin-bottom: 50px;
+            border-radius: 30px;
+        }
+        .row {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px;
+
+        }
+        .item {
+            flex-basis: 15%;
+            background-color: red;
+            width: 200px;
+            height: 180px;
+        }
+
+        .class02 .row .item:nth-child(2) {
+            background-color: blue;
+            flex-grow: 2;
+        }
+        .class01 .row .item:nth-child(1) {
+            background-color: blue;
+            flex-grow: 0.5;
+        }
+        .row-col {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 200%;
+            height: 150px;
+        }
+        .item-col {
+            width: 45%;
+            height: 30px;
+            background-color: aliceblue;
+            animation:  bar 3s linear infinite;
+}
+@keyframes bar {
+    0% {
+        opacity: 1;
+        width: 0;
+    }
+    100% {
+        opacity: 1;
+        width: 50%;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section class="class01">
+            <div class="row">
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+            </div>
+        </section>
+        <section class="class02">
+            <div class="row">
+                <div class="item">
+                <div class="row-col">
+                    <div class="item-col"></div>
+                    <div class="item-col"></div>
+                    <div class="item-col"></div>
+                
+                </div>
+                
+            </div>
+            <div class="item"></div>
+            <div class="item"></div>
+        </div>
+        </section>
+    </div>
+    
+</body>
+</html>
