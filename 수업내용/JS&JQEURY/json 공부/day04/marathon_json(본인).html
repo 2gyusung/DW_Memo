@@ -131,7 +131,7 @@
       var halfMarathon = 0; // count 변수
       for (var i = 0; i < marathonList.length; i++) {
         if (marathonList[i].type === "half marathon") {
-          halfMarathon++;
+         ++halfMarathon;
         }
       }
       console.log(halfMarathon);
@@ -151,8 +151,8 @@
       for (var i = 0; i < marathonList.length; i++) {
         if (marathonList[i].records == "null");
        
-        console.log(marathonList[i].no);
         console.log(marathonList[i].participant);
+        console.log(marathonList[i].no);
       }
       // 4번문제 못 풀음
         // 이해 못함
@@ -163,21 +163,25 @@
       // var start = marathonList[0].records;
       // var firstFinish = new Date(start);
       // console.log(start);
-      var marathonListTime = new Date('2022-04-01 13:35:00').getTime();
-      var min = 0;
-      var temp = 0;
-      for (var i = 0; i < marathonList.length; i++) {
-      if(marathonList[i].records !== 'null') {
-        var participantTime = new Date(marathonList[i].records).getTime();
-        var diffTime = marathonListTime -participantTime;
-        if( i == 0) min = diffTime;
-        if(min > diffTime) {
-          min = participantTime;
-          min = diffTime;
-          temp = i;
+      var marathonStartTime = new Date('2022-04-01 13:00:00').getTime();
+        var min = 0;
+        var temp = 0;
+        var cnt = 0;
+        for(var i=0; i<marathonList.length; i++){
+          if(marathonList[i].records !== 'null'){
+            var participantTime = new Date(marathonList[i].records).getTime();
+            var diffTime = participantTime - marathonStartTime;1
+            if(cnt === 0){
+              min = diffTime
+            }
+            ++cnt;
+            if(min > diffTime){
+                min = diffTime;
+                temp = i;
+            }
+          }
         }
-      }
-      }
+        console.log(marathonList[temp]);
 
       // 5번문제  못 풀음
 
@@ -236,17 +240,18 @@
     // console.log(start);
 
     // 5번문제  못 풀음 
-      var marathonListTime = new Date('2022-04-01 13:00:00').getTime();
-      var totalTime = 0;
-      var cnt = 0;
-      for(var i = 0; i<marathonList.length; i++) {
-        if(marathonList[i].records !== 'null') {
-          var participantTime = new Date(marathonList[i].records).getTime();
-          var diffTime = (participantTime - marathonListTime) //(1000 * 60);
-          totalTime += diffTime;
-          ++cnt;
+    var marathonStartTime = new Date('2022-04-01 13:00:00').getTime();
+        var totalTime = 0;//기록이 null이 아니고 완주한 사람시간 총 합
+        var cnt = 0;//기록이 null이 아니고 완주한 사람 카운팅
+        for(var i=0; i<marathonList.length; i++){
+          if(marathonList[i].records !== 'null'){
+            var participantTime = new Date(marathonList[i].records).getTime();
+            var diffMinute = (participantTime - marathonStartTime) / (1000 * 60);
+            totalTime += diffMinute;
+            ++cnt;
+          }
         }
-      }
+        console.log(totalTime / cnt);
 
     // var zero = marathonList[0].records;
     // var one = marathonList[1].records;
