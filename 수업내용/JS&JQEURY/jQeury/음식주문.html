@@ -97,28 +97,29 @@
     ></script>
     <script>
       function removeItem(val) {
-        $('#myMenu').append(val);
+        $("#myMenu").append(val);
       }
       function doOrder() {
-        var len = $('#myMenu').children().length;
+        var len = $("#myMenu").children().length;
         if (len < 1) {
-          alert('메뉴를 선택해주세요!');
+          alert("메뉴를 선택해주세요!");
           return false;
         }
-        var menu = '';
+        var menu = "";
         for (var i = 0; i < len; i++) {
-          if ($('#myMenu').children()[i].innerHTML === '곱창 파스타') {
-            alert($('#myMenu').children()[i].innerHTML + '재료소진 입니다.');
+          if ($("#myMenu").children()[i].innerHTML === "곱창 파스타") {
+            alert($("#myMenu").children()[i].innerHTML + "재료소진 입니다.");
             return false;
           }
+
           if (i == len - 1) {
-            menu += $('#myMenu').children()[i].innerHTML;
+            menu += $("#myMenu").children()[i].innerHTML;
             break;
           }
-          menu += $('#myMenu').children()[i].innerHTML + ',';
+          menu += $("#myMenu").children()[i].innerHTML + ",";
         }
         confirm(
-          '선택한 메뉴는 ' + menu + ' 총' + len + '개를 주문하시겠습니까?.',
+          "선택한 메뉴는 " + menu + " 총" + len + "개를 주문하시겠습니까?."
         );
       }
       function doClear() {
