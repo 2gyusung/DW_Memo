@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .popup {
+            position: relative;
+            width: 1000px;
+            height: 300px;
+            background-color: #777;
+            margin: 100px auto;
+        }
+        .close {
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            border: 1px solid black;
+            cursor: pointer;
+        }
+        .container {
+            width: 500px;
+            height: 200px;
+            margin: 50px auto;
+        }
+        button {
+            cursor: pointer;
+            padding: 3%;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div id="popup" class="popup">
+        <!-- 컨텐츠 외적인 것은 밖에다가 만든다 -->
+        <div class="close" onclick="closePopup()">
+            
+        </div>
+    </div>
+    <div class="container">
+        <!-- 사이트 컨텐츠 내용 작성 -->
+        <button id="up" onclick="peakup()">확인</button>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+     crossorigin="anonymous"></script>
+     <script>
+         function closePopup() {
+            $('#popup').hide();
+            $('.container').append('<button onclick="peakup()">취소</button>')
+        }
+        // 취소 버튼 누르게 되면 원상 복구
+        function peakup() {
+            // var style = document.getElementById('popup').style.display;
+            var style = $('#popup').css("display");
+            //JavaScript에서는
+            //A == B: A는 B와 같다.
+            //A ===B: A와 B는 같고 자료형도 같다.
+            //var a = '1'
+            //var a1 = 1
+            //var a == a1//true
+            //var a === a1//false.
+            if(style === 'none') {
+                // document.getElementById('popup').style.display = 'block';
+                //$('popup').show();
+                $('#popup').css('display','block');
+                return true;
+            }
+        }
+     </script>
+</body>
+</html>
