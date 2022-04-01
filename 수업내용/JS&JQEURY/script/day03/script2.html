@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>script CSS 컨트롤</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .blue {
+        background-color: blue;
+        width: 150px;
+        height: 150px;
+        cursor: pointer;
+      }
+      .red {
+        background-color: red;
+        width: 150px;
+        height: 150px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- script을 이용한 CSS 컨트롤 -->
+    <!-- onclick : 클릭 시 함수 호출 -->
+    <div class="container">
+      <div id="blue" class="blue" onclick="changeColor()"></div>
+      <div class="red" onclick="hide()"></div>
+
+      <div class="clear" onclick="setIntialization()">
+        <button>ALL CLEAR</button>
+      </div>
+      <div class="form">
+        <input id="userpassword" type="password" value="" />
+        <input
+          id="userpassword2"
+          type="password"
+          value=""
+          onkeyup="checkUserId()"
+        />
+      </div>
+    </div>
+    <script>
+      // 비밀번호 일치
+      function checkUserId() {
+        var password = document.getElementById('userpassword').value;
+        var password2 = document.getElementById('userpassword2').value;
+        if (password == password2) {
+          confirm('비밀번호 일치');
+        }
+      }
+      // 함수(메소드)
+      // javascript 함수는 리턴 타입이 없다.
+      // 색상 변경
+      //   함수 이름
+      function changeColor() {
+        //   바닐라 스크립트 문법
+        //   HTML id blue를 불러온다.
+
+        var color = (document.getElementById('blue').style.backgroundColor =
+          'black');
+        if (color == 'black') {
+          alert('이미 배경 색깔은 검은색입니다.');
+          return 0;
+        }
+        document.getElementById('blue').style.backgroundColor = 'black';
+
+        console.log(color);
+      }
+
+      function hide() {
+        // html
+        document.getElementById('blue').style.display = 'none';
+      }
+      // 색상 변경
+      // html
+
+      function setIntialization() {
+        // html
+        document.getElementById('blue').style.backgroundColor = 'blue';
+        // display:block
+        document.getElementById('blue').style.display = 'block';
+      }
+    </script>
+  </body>
+</html>
