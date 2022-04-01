@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Json</title>
+</head>
+<body>
+    <div class="forms">
+        <input id = "name" type="text" value="이규성" />
+        <input id = "hobby" type="text" value="볼링" />
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+        // var name = $('#name').val();
+        // var hobby = $('#hobby').val();
+        
+        // var jsonData = {};
+        // // 
+        // jsonData.name = 'ds';
+        // jsonData[name] = '교사';
+
+        // console.log(jsonData);
+
+        var formsChildren = $('.forms').children();
+        console.log(formsChildren);
+        var jsonData  = {};
+        for(var i= 0; i<formsChildren.length; i++) {
+            var inputId = formsChildren[i].id;
+            console.log(inputId);
+            var inputValue = $('#' + inputId).val();
+            jsonData[inputId] = inputValue;
+            // input에 "", 길이가 20을 넘었는지
+        }
+        console.log(jsonData);
+        submitServer(jsonData);
+
+        function submitServer(param) {
+            // 서버에 보내는 로직 구현 중(with 제이쿼리)
+            //  param 변수를 서버에 보내자!
+        }
+    </script>
+</body>
+</html>
