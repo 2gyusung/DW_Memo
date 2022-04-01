@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="mediascroll(미디어쿼리.css">
+    <title>Document</title>
+  </head>
+  
+  <body>
+    <div class="container">
+      <div class="header">
+        <ul>
+          <li onclick="doScroll()">Home</li>
+        </ul>
+      </div>
+   
+
+      <div class="row">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+      </div>
+      <div class="row">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+      </div>
+
+     
+
+     
+    <script>
+      function doScroll() {
+        window.scrollTo({ top: 300, behavior: 'smooth' });
+      }
+ 
+    </script>
+  </body>
+</html>
