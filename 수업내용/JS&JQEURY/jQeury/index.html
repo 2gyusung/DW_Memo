@@ -5,72 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        .container {
-            width: 500px;
-            height: auto;
-            padding: 2%;
-            background-color: #777;
-            margin: 100px auto;
-        }
-        .container input {
-            width: 100%;
-            margin-bottom: 10px;
-            height: 30px;
-        }
-    </style>
 </head>
 <body>
-    <div class="container">
-        <input id="menu-1" type="text" value="삼겹살"/>
-        <input id="menu-2" type="text" value="돈까스"/>
-        <input id="menu-3" type="text" value="가츠동"/>
-        <input  id="menu-4"type="text" value=""/>
-        <input  id="menu-5"type="text" value=""/>
+    <div class="text-wrapper">
+                          <!--  -->
+        <input id = "참이슬"type="text" value="  123"/>
+        <input id = "대선" type="text" value="  "/>
+        <input id = "여수밤바다" type="text" value="여수밤바다  "/>
+        <input id = "한라산" type="text" value="한라산  "/>
+        <input id = "린" type="text" value="린  "/>
     </div>
+    <button>클릭</button>
     <script
     src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-    crossorigin="anonymous"
-  ></script>
-  <script>
-      $(function() {
-        //   배열 활용
-          var menu1 = $('#menu-1').val();
-          var menu2 = $('#menu-2').val();
-          var menu3 = $('#menu-3').val();
+    crossorigin="anonymous"></script>
+    <script>
+        // 클릭 했을 떄 input value 호출!(조건, 공백 제거)\
+        /* 1 요소html 태그에 id 지정 [단점 : input 많아지면 코드도 길어짐] 
+        */
+       var name = '참이슬';
+        $('#참이슬');                 
+         var result  = $('#' + name).val().trim();//메소드 체이닝
+            console.log(result);
 
-          var array = ['1', '2', '3'];  // 기존에 알던 배열
-          var array2 = new Array(); // 새로운 배열 방법
-        //   array는 내장 클래스
-        
-        array2.push(menu1);  // 배열에 값 추가 !
-        array2.push(menu2);  // push는 Array라는 클래스에 있는 메소드!
-        array2.push(menu3);
-        for(var i=0; i<array2.length; i++) {
-            console.log(array2[i]);
-            // 돈까스 문제에 hello world 입력 문제
-            if (array2[i] === '돈까스') {
-                console.log('hello world');
-                //돈까스에서 치즈 돈까스로 변경
-            //    $('#menu-2').val('치즈돈까스'); //돈까스 - 치즈돈까스
-               $('#menu-2').attr('value','치즈듬뿍돈까스');//돈까스- 치즈돈까스
+            //2번째 방법 부모와 자식을 이용.
+            // text-wrapper에 자식정보에 대입
+           var textWrapperChildren =  $('.text-wrapper').children();
+           console.log(textWrapperChildren); //chidren을 이용해서 상세히 알 수 있음.
+
+
+        //    배열 === 반복문(while, each, for)
+        // id를 가져오기
+        for(var i=0; i<textWrapperChildren.length; i++) {
+            // value를 가져옴
+            var id = textWrapperChildren[i].id; // ***
+            var value = $('#' + id).val().trim(); /// *** ?
+
+            
+            
+            if (value == '') {
+                console.log('필수 입력란을 쓰세요');
+                $('#' + id).focus();
             }
-           // 삼겹살 삭제
-           if(array2[i] === '삼겹살') {
-               array2.splice(i, 1); //index 0 부터 1개의 요소(삼겹살) 제거
-           }
+        //    var value = $('#' + id).val().trim().replace(/ /g,'');
+        //    console.log(value);
         }
-        
 
-        console.log(array2.length);
-        
-      });
-  </script>
+    </script>
 </body>
 </html>
