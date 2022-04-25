@@ -17,3 +17,9 @@
 
 - flex 사이트
 : https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+- HTML 정보 사이트
+: https://developer.mozilla.org/en-US/docs/Web/HTML/Element
+
+- 부트스트랩 사이트
+: https://startbootstrap.com/theme/sb-admin-2
