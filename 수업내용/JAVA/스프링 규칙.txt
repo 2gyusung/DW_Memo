@@ -1,0 +1,14 @@
+spring 규칙
+패키지는 3개 부터 시작한다
+ex) com.dw.board
+
+첫번째 패키지 : www io kr
+두번째 : 회사이름
+세번째 프로젝트명
+
+controller : 패키지 생성
+
+
+controller : url 요청
+
+2.http:
