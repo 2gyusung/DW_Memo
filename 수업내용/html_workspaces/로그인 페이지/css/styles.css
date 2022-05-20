@@ -12,11 +12,11 @@ body {
 }
 
 .login-form {
-  width: 300px; 
+  width: 350px; 
   background-color:#eeeff1;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 50px;
+  margin-top: 300px;
   padding: 20px;
 }
 
