@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>메인</title>
+  </head>
+  <body>
+    <div class="container" id="wrap">
+      <div class="header__wrapper" id="header">
+        <div class="header-logo">
+          <img src="img/logo.cae2c042.svg" alt="" />
+        </div>
+        <div class="header-menu" id="header">
+          <a href="#">스토어 추천 제품</a>
+          <a href="#">제품</a>
+          <a href="#">기획전</a>
+          <a href="#">멤버쉽</a>
+          <a href="#">고객서비스</a>
+        </div>
+        <div class="header-icon">
+          <i class="ri-search-line"></i>
+          <i class="ri-user-line"></i>
+          <i class="ri-shopping-bag-2-line"></i>
+        </div>
+      </div>
+
+      <div class="banner">
+        <div class="banner-title">
+          <p>편안하게 몰입하다</p>
+          <p>LinkBuds S</p>
+          <p>더 가볍게, 더 편안하게</p>
+
+          <a href="#new" class="button__link">
+            자세히 보기 <i class="ri-arrow-right-line"></i>
+          </a>
+        </div>
+        <div>
+          <img class="banner-img" src="img/02_MO_main_IMG.jpg" alt="" />
+        </div>
+      </div>
+      <div class="swiper-best">
+        <h1>BEST</h1>
+      </div>
+      <div class="swiper-box">
+        
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper"  >
+            <div class="swiper-slide">
+              <img class="swiper-img" src="img/102284831_1.png" alt="" />
+              <p>벗지않는 편안함</p>
+              <p>LinkBuds</p>
+            </div>
+            <div class="swiper-slide">
+              <img class="swiper-img" src="img/104579680_01.png" alt="" />
+              <p>편안하게 몰입하다</p>
+              <p>LinkBuds S</p>
+            </div>
+            <div class="swiper-slide">
+              <img class="swiper-img" src="img/104580435_1.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img class="swiper-img" src="img/ILCE-7M4_1.png" alt="" />
+              <p>표준의 격차</p>
+              <p>
+                ILCE-7M4<br />
+                The Camera
+              </p>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+    
+
+      <div class="cart-title">
+        <h1>PRODUCT</h1>
+      </div>
+      <div class="card-container">
+        <!-- 아이템 클래스 이름 -->
+      <div class="col">
+        <h2>Audio</h2>
+        <div class="caption">
+        
+          <button type="button">더 보기</button>
+        </div>
+        <img src="img/main_prod_audio.224ca686.png" alt="" />
+      </div>
+      <div class="col">
+        <h2>Camera</h2>
+        <div class="caption">
+       
+          <button type="button">더 보기</button>
+        </div>
+        <img src="img/main_prod_camera.24473fcf.png" alt="" />
+      </div>
+      <div class="col">
+        <h2>PlayStaion</h2>
+        <div class="caption">
+        
+          <button type="button">더 보기</button>
+        </div>
+        <img src="img/main_prod_ps.e4346725.png" alt="" />
+      </div>
+      <div class="col">
+          <h2>Video Camera</h2>
+          <div class="caption">
+         
+            <button type="button">더 보기</button>
+          </div>
+          <img src="img/main_prod_vcamera.7e8353a1.png" alt="" />
+        </div>
+    </div>
+    <div class="academy-banner">
+      <img src="img/알파-6월-아카데미-배너_a.jpg" alt="" width="80%" height="300px">
+    </div>
+    <div class="help-box">
+      <div class="help-title">
+        <h1>무엇을 <br>
+           도와드릴까요?</h1>
+      </div>
+      <div class="help-click">
+        <i class="ri-customer-service-2-line">고객센터</i>
+        <i class="ri-article-line">제품지원</i>
+        <i class="ri-map-pin-line">매장안내</i>
+        <i class="ri-clipboard-line">공지사항</i>
+      </div>
+    </div>
+  
+    <footer>
+      <nav>
+          <a href='https://cocoder.tistory.com' target='_blank'>Blog</a> |
+          <a href='https://github.com/cocoder16' target='_blank'>Github</a>
+      </nav>
+      <p>
+          <span>저자 : leegyusung</span><br/>
+          <span>이메일 : 97gyusung@gmail.com</span><br/>
+          <span>Copyright 2020. cocoder. All Rights Reserved.</span>
+      </p>
+    </footer>
+  
+    </div>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+
+
+      // scroll
+      const scrollHeader = () => {
+        const header = document.getElementById('header');
+        this.scrollY >= 50
+          ? header.classList.add('scroll-header')
+          : header.classList.remove('scroll-header');
+      };
+
+      window.addEventListener('scroll', scrollHeader);
+
+      // swiper
+      var swiper = new Swiper('.mySwiper', {
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+
+
+
+    </script>
+  </body>
+</html>
