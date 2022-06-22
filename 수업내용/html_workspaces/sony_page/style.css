@@ -170,7 +170,7 @@
 /* card */
 .cart-title {
   text-align: center;
-  margin-top: 40px;
+  margin-top: 48px;
   margin-bottom: 40px;
 }
 .card-container {
@@ -185,14 +185,15 @@
 .col {
   height: 100%;
   /* 아이템이 자신의 컨테이너가 차지하는 공간에 맞추기 위해 크기를 키우거나 줄이는 방법을 설정하는 속성 */
-  flex: 1;
+  flex: 0.5;
   color: #bbb;
   /* 동서남북 */
   padding: 25px;
   /* img를 위해서 relative */
   position: relative;
   transition: 0.6s;
-  box-shadow: 5px 5px 10px 0;
+  border-right: 1px solid black;
+  
 }
 
 /* 차일드 */
@@ -209,6 +210,7 @@
 }
 .col:nth-child(4) {
   background: transparent;
+  border-right: 1px solid transparent;
 }
 
 h2 {
@@ -252,7 +254,7 @@ h2 {
 /* hover 이벤트 모음 */
 /* item hover 할 떄에 색상 변경 및 확대한다.*/
 .col:hover {
-  flex-grow: 4.5;
+  flex-grow: 1.5;
   background-color: royalblue;
   box-shadow: 5px 5px 10px 0;
 }
@@ -293,13 +295,41 @@ h2 {
 }
 /* footer */
 footer {
+  margin-top: 50px;
   width: 100%;
-  height: 110px;
-  bottom: 0;
+  height: 150px;
   position: absolute;
+  color: #bbb;
+  background-color: black;
 }
 #wrap {
   min-height: 100vh;
   position: relative;
   width: 100%;
+}
+
+footer a {
+  text-decoration: none;
+  color: #bbb;
+}
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* social */
+
+.social i {
+  font-size: 28px;
+  padding: 15px;
+}
+.social i:hover {
+  color: rgb(255, 255, 255);
+}
+.social-title {
+    text-align: center;
+    font-size: 18px;
+    padding: 15px;
+    font-weight: 600;
 }
