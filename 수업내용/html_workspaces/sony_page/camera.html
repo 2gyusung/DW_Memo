@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>메인</title>
+  </head>
+  <body>
+    <div class="container" id="wrap">
+      <div class="header__wrapper" id="header">
+        <div class="header-logo">
+          <a href="index.html"><img src="img/logo.cae2c042.svg" alt="" /></a>     
+        </div>
+        <div class="header-menu" id="header">
+          <a href="recommend.html">스토어 추천 제품</a>
+          <a href="#">제품</a>
+          <a href="#">기획전</a>
+          <a href="#">멤버쉽</a>
+          <a href="#">고객서비스</a>
+        </div>
+        <div class="header-icon">
+          <i class="ri-search-line"></i>
+          <i class="ri-user-line"></i>
+          <i class="ri-shopping-bag-2-line"></i>
+        </div>
+      </div>
+
+      <div class="banner">
+        <div class="banner-title">
+        <span>카메라</span>
+        </div>
+        <div>
+          <img class="banner-img" src="img/pexels-abhishek-saini-2929412.jpg" style=" height: 70vh;" alt="" />
+        </div>
+      </div>
+
+      <footer class="footer-wrapper">
+        <nav>
+          <a  class="github" href="https://github.com/2gyusung" target="_blank"><i class="ri-github-fill"></i>Github</a>
+          <p>
+          <span>저자 : leegyusung</span><br />
+          <span>이메일 : 97gyusung@gmail.com</span><br />
+          <span>Copyright 2022. 2gyusung. All Rights Reserved.</span>
+        </p>
+        </nav>
+        <div class="social">
+          <div class="social-title">
+          <p>Follow Us</p>
+        </div>
+          <i class="ri-instagram-line"></i>
+          <i class="ri-facebook-box-fill"></i>
+          <i class="ri-youtube-fill"></i>
+          <i class="ri-kakao-talk-fill"></i>
+        </div>
+      </footer>
+    </div>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+      // scroll
+      const scrollHeader = () => {
+        const header = document.getElementById('header');
+        this.scrollY >= 50
+          ? header.classList.add('scroll-header')
+          : header.classList.remove('scroll-header');
+      };
+
+      window.addEventListener('scroll', scrollHeader);
+
+      // swiper
+      var swiper = new Swiper('.mySwiper', {
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+    </script>
+  </body>
+</html>

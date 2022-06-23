@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sony/recommend</title>
+    
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+    />
+    <link rel="stylesheet" href="recommend.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container" id="wrap">
+    <div class="header__wrapper" id="header">
+      <div class="header-logo">
+        <a href="index.html"><img src="img/logo.cae2c042.svg" alt="" /></a>
+      </div>
+      <div class="header-menu" id="header">
+        <a href="#">스토어 추천 제품</a>
+        <a href="#">제품</a>
+        <a href="#">기획전</a>
+        <a href="#">멤버쉽</a>
+        <a href="#">고객서비스</a>
+      </div>
+      <div class="header-icon">
+        <i class="ri-search-line"></i>
+        <i class="ri-user-line"></i>
+        <i class="ri-shopping-bag-2-line"></i>
+      </div>
+    </div>
+
+    <div class="content">
+    <div class="banner">
+        <div class="banner-title">
+          <h1>Sony Store</h1>
+          <p>Products</p>
+          <p>당신의 삶을 특별하게 해줄 스마트한</p>
+          <p>소니스토어 추천 제품을 살펴보세요.</p>
+        </div>
+        <div>
+          <img class="banner-img" style=" height: 70vh;" src="img/KV_1_PC.jpg" alt="" />
+        </div>
+      </div>
+      <div class="items"  >
+        <div class="item-box" >
+
+            <div class="item-box-inner">
+                <a href="#">
+                    <img src="img/Origin_01.jpg" alt="">
+                </a>
+                <h2>LinkBuds S</h2>
+                <p>편안하게 몰입하다</p>
+            </div>
+
+            <div class="item-box-inner">
+                <a href="#">
+                    <img src="img/Origin_02.jpg" alt="">
+                </a>
+                <h2>ILCE-7M4</h2>
+                <p>The Camera</p>
+            </div>
+
+            <div class="item-box-inner">
+                <a href="#">
+                    <img src="img/Origin_03.jpg" alt="">
+                </a>
+                <h2>ZV-E10L</h2>
+                <p>데일리 렌즈교환식 브이로그 카메라</p>
+            </div>
+
+            <div class="item-box-inner">
+                <a href="#">
+                    <img src="img/Origin_04.jpg" alt="">
+                </a>
+                <h2>LinkBuds</h2>
+                <p>벗지 않는 편안함</p>
+            </div>
+
+            <div class="item-box-inner">
+                <a href="#">
+                    <img src="img/Origin_05.jpg" alt="">
+                </a>
+                <h2>LSPX-S3</h2>
+                <p>공간을 포근하게 채워주는 오가닉 글래스의 크리스탈 클리어 사운드</p>
+            </div>
+    
+            <div class="item-box-inner">
+                <a href="#">
+                    <img src="img/Origin_06.jpg" alt="">
+                </a>
+                <h2>SRS-RA5000</h2>
+                <p>소리로 공간을 디자인하다. 디퓨저 사운드 스피커</p>
+            </div>
+    
+            <div class="item-box-inner">
+                <a href="#">
+                    <img src="img/Origin_07.jpg" alt="">
+                </a>
+                <h2>SEL2470GM2</h2>
+                <p>미래형 렌즈의 완성</p>
+            </div>
+        </div>
+    </div>
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="img/Event-List-Banner (2).jpg" alt=""></div>
+          <div class="swiper-slide"><img src="img/Event-List-Banner (3).jpg" alt=""><a href="#">초여름, 소니스토어 압구정에서 <br>잠시 쉬어 가세요!</a></div>
+          <div class="swiper-slide"><img src="img/Event-List-Banner (4).jpg" alt=""><a href="#">크리에이터의 탁월한 선택 <br> ICD-TX660</a></div>
+          <div class="swiper-slide"><img src="img/Event-List-Banner (5).jpg" alt=""></div>
+          <div class="swiper-slide"><img src="img/Event-List-Banner (6).jpg" alt=""></div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    
+      <footer class="footer-wrapper">
+        <nav>
+          <a href="https://github.com/2gyusung" target="_blank"><i class="ri-github-fill"></i>Github</a>
+          <p>
+          <span>저자 : leegyusung</span><br />
+          <span>이메일 : 97gyusung@gmail.com</span><br />
+          <span>Copyright 2022. 2gyusung. All Rights Reserved.</span>
+        </p>
+        </nav>
+        <div class="social">
+          <div class="social-title">
+          <p>Follow Us</p>
+        </div>
+          <i class="ri-instagram-line"></i>
+          <i class="ri-facebook-box-fill"></i>
+          <i class="ri-youtube-fill"></i>
+          <i class="ri-kakao-talk-fill"></i>
+        </div>
+      </footer>
+
+      </div>
+      
+
+      
+      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+      <script>
+        // scroll
+        const scrollHeader = () => {
+          const header = document.getElementById('header');
+          this.scrollY >= 10
+            ? header.classList.add('scroll-header')
+            : header.classList.remove('scroll-header');
+        };
+        
+        window.addEventListener('scroll', scrollHeader);
+
+        // const scrollItem = () => {
+        //   const item = document.querySelector('.item-box');
+        //   this.scrollY >= 600
+        //  ? item.classList.add('item-box-inner')
+        //  :  item.classList.remove('item-box-inner');
+        // };
+        // window.addEventListener('scroll', scrollItem);
+
+        
+        var swiper = new Swiper(".mySwiper", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+
+
+
+
+        </script>
+</body>
+</html>
