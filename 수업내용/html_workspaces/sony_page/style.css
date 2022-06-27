@@ -101,7 +101,12 @@
 .button__link:hover i {
   transform: translateX(0.25rem);
 }
+
 /* swiper-slide */
+.swiper-box{
+  display: flex;
+  justify-content: space-between;
+}
 .swiper-best {
   text-align: center;
   margin-top: 35px;
