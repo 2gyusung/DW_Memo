@@ -343,3 +343,12 @@ footer a {
     padding: 15px;
     font-weight: 600;
 }
+
+/* mobile */
+
+@media ( min-width: 768px ) {
+  
+}
+@media ( min-width: 1024px ) {
+  
+}

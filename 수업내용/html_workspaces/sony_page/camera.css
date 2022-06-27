@@ -1,0 +1,17 @@
+/* .itme-img{
+    width: 50px;
+    background-color: lightgray;
+} */
+
+.product-wrapper {
+    width: 100%;
+}
+
+.product-item {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.item-name , .item-price{
+    text-align: left;
+}
