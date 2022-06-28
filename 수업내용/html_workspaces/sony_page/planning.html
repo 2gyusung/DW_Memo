@@ -13,6 +13,9 @@
       rel="stylesheet"
     />
     <!-- CSS only -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"> -->
+
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="planning.css" />
     <!-- <link
@@ -99,28 +102,41 @@
         </div>
       </div>
 
-      <div class="plan-event-wrapper">
-        <div class="event-content">
-          <ul class="event-list">
-            <li>전체</li>
-            <li>소니스토어 단독</li>
-            <li>혜택존</li>
-            <li>예약판매</li>
-            <li>정품등록 이벤트</li>
-            <li>LIVE ON</li>
-          </ul>
-        </div>
-
-        <div class="planning-content">
-          <div class="plan-content">
-            <!-- 이미지 -->
-            <!-- <div class="plan-img">
-              <img src="planning-img/Event-List-Banner (1).jpg" alt="" width="500px">
-            </div> -->
-          </div>
-        </div>
+      <!-- <div class="info-content">
+      <div class="tab_menu">
+        <ul class="list">
+          <li class="is_on">
+            <a href="#tab1" class="btn">전체</a>
+            <div id="tab1" class="cont">Tab Content1</div>
+          </li>
+          <li>
+            <a href="#tab2" class="btn">소니스토어 단독</a>
+            <div id="tab2" class="cont">Tab Content2</div>
+          </li>
+          <li>
+            <a href="#tab3" class="btn">혜택존</a>
+            <div id="tab3" class="cont">Tab Content3</div>
+          </li>
+          <li>
+            <a href="#tab4" class="btn">혜택존</a>
+            <div id="tab4" class="cont">Tab Content3</div>
+          </li>
+          <li>
+            <a href="#tab4" class="btn">예약판매</a>
+            <div id="tab4" class="cont">Tab Content3</div>
+          </li>
+          <li>
+            <a href="#tab5" class="btn">정품등록 이벤트</a>
+            <div id="tab5" class="cont">Tab Content3</div>
+          </li>
+          <li>
+            <a href="#tab6" class="btn">LIVE ON</a>
+            <div id="tab6" class="cont">Tab Content3</div>
+          </li>
+        </ul>
       </div>
- 
+    </div> -->
+
       <footer class="footer-wrapper">
         <nav>
           <a class="github" href="https://github.com/2gyusung" target="_blank"
@@ -145,14 +161,30 @@
     </div>
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script> -->
     <!-- JavaScript Bundle with Popper -->
-    <script
+    <!-- <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
-    ></script>
+    ></script> -->
     <!-- Initialize Swiper -->
     <script>
+      // const tabList = document.querySelectorAll('.tab_menu .list li');
+
+      // for (var i = 0; i < tabList.length; i++) {
+      //   tabList[i]
+      //     .querySelector('.btn')
+      //     .addEventListener('click', function (e) {
+      //       e.preventDefault();
+      //       for (var j = 0; j < tabList.length; j++) {
+      //         tabList[j].classList.remove('is_on');
+      //       }
+      //       this.parentNode.classList.add('is_on');
+      //     });
+      // }
+
       var swiper = new Swiper('.mySwiper', {
         spaceBetween: 30,
         centeredSlides: true,

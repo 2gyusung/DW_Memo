@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS only -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="qna.css">
+ 
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header__wrapper" id="header">
+        <div class="header-logo">
+          <a href="index.html"><img src="img/logo.cae2c042.svg" alt="" /></a>
+        </div>
+        <div class="header-menu" id="header">
+          <a href="recommend.html">스토어 추천 제품</a>
+          <a href="#">제품</a>
+          <a href="#">기획전</a>
+          <a href="#">멤버쉽</a>
+          <a href="#">고객서비스</a>
+        </div>
+        <div class="header-icon">
+          <i class="ri-search-line"></i>
+          <i class="ri-user-line"></i>
+          <i class="ri-shopping-bag-2-line"></i>
+        </div>
+      </div>
+
+      
+  <ul id="accordion" class="accordion">
+    <li class="show">
+      <div class="menu"><i class="fa fa-code"></i>Front-end<i class="fa fa-chevron-down"></i></div>
+      <ul class="submenu">
+        <li><a href="#">HTML</a></li>
+        <li><a href="#">CSS</a></li>
+        <li><a href="#">Javascript</a></li>
+      </ul>
+    </li>
+    <li>
+      <div class="menu"><i class="fa fa-mobile"></i>Responsive web<i class="fa fa-chevron-down"></i></div>
+      <ul class="submenu">
+        <li><a href="#">Tablets</a></li>
+        <li><a href="#">Mobiles</a></li>
+        <li><a href="#">Desktop</a></li>
+      </ul>
+    </li>
+    <li>
+      <div class="menu"><i class="fa fa-globe"></i>Web Browser<i class="fa fa-chevron-down"></i></div>
+      <ul class="submenu">
+        <li><a href="#">Chrome</a></li>
+        <li><a href="#">Firfox</a></li>
+        <li><a href="#">Safari</a></li>
+      </ul>
+    </li>
+  </ul>
+
+    </div>
+    <script>
+        class Accordion {
+          constructor(options) {
+            // 기본 옵션과 사용자 지정 옵션을 병합
+            this.config = Accordion.mergeConfig(options);
+            this.accordion = document.querySelector(this.config.selector);
+            // 이벤트 핸들러 내부의 this는 currentTartget
+            this.accordion.addEventListener('click', this.toogle.bind(this));
+          }
+      
+          static mergeConfig(options) {
+            // 기본 옵션
+            const config = {
+              selector: '#accordion',
+              multi: true
+            };
+      
+            return { ...config, ...options };
+          }
+      
+          toogle(event) {
+            if (!event.target.classList.contains('menu')) return;
+            // click 이벤트를 발생시킨 <div class="menu"> 요소의 부모 요소인 li 요소
+            const targetLi = event.target.parentNode;
+      
+            // 멀티 오픈을 허용하지 않으면 타깃 이외의 모든 서브메뉴를 클로즈한다.
+            if (!this.config.multi) {
+              [].filter.call(
+                this.accordion.childNodes,
+                li => li.nodeType === Node.ELEMENT_NODE && li !== targetLi
+              ).forEach(li => li.classList.remove('show'));
+            }
+      
+            // li 요소의 class에 "show"가 있으면 제거하고 없으면 추가한다.
+            targetLi.classList.toggle('show');
+          }
+        }
+      
+        window.onload = function () {
+          const accordion = new Accordion({ multi: false });
+          // const accordion = new Accordion();
+        };
+      </script>
+  </body>
+</html>
