@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- CSS only -->
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="qna.css">
- 
+    <link rel="stylesheet" href="qna.css" />
+
     <title>Document</title>
   </head>
   <body>
@@ -29,78 +29,124 @@
           <i class="ri-shopping-bag-2-line"></i>
         </div>
       </div>
+      <div class="accordion-title">
+        <h1>FAQ & 공지사항</h1>
+      <article>
+      </div>
+
+      <div class="accordion-wrapper">
+        <ul id="accordion" class="accordion">
+          <li class="show">
+            <div class="menu">
+              <i class="fa fa-code"></i>ESP상품의 결제 방법에는 무엇이 있나요?<i
+                class="fa fa-chevron-down"
+              ></i>
+            </div>
+            <ul class="submenu">
+              <li>
+                <a href="#"
+                  >ESP와 같은 무형 상품은 신용카드로 결제 가능하며, 가상계좌
+                  결제는 사용하실 수 없습니다.</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li>
+            <div class="menu">
+              <i class="fa fa-mobile"></i>알파 아카데미 신청은 어디서 하나요?<i
+                class="fa fa-chevron-down"
+              ></i>
+            </div>
+            <ul class="submenu">
+              <li>
+                <a href="#"
+                  >알파 아카데미 신청은 소니스토어 메인 페이지 하단, 혹은 알파
+                  사이트에서 신청하실 수 있습니다.</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li>
+            <div class="menu">
+              <i class="fa fa-globe"></i>마일리지 ESP(연장 서비스플랜) 구입이 가능한가요?<i
+                class="fa fa-chevron-down"
+              ></i>
+            </div>
+            <ul class="submenu">
+              <li><a href="#">ESP는 마일리지로 구입 가능합니다. (단, ESP 구매 시 마일리지 적립은 되지 않습니다.)</a></li> 
+            </ul>
+          </li>
+          <li>
+            <div class="menu">
+              <i class="fa fa-mobile"></i>E-Coupon은 언제 사용할 수 있나요?<i
+                class="fa fa-chevron-down"
+              ></i>
+            </div>
+            <ul class="submenu">
+              <li>
+                <a href="#"
+                  >상품1개당 한 개의 쿠폰만 사용하실 수 있으며, 쿠폰에 안내된 사용기간 내에만 가능합니다.
+                  단, 정품 등록 후 발급되는 쿠폰의 경우는 2개 이상 상품주문이 가능합니다.(1개의 주문으로 복수 주문 시로만 가능)
+                  쿠폰금액이 판매가를 초과할 경우, 쿠폰이 적용 되지 않습니다.
+                  <br>
+                  <br>
+                  - 주문 후 반품, 환불의 경우 한번 사용하신 쿠폰은 다시 사용하실 수 없습니다.  <br>
+                  - 쿠폰 사용 시 마일리지는 쿠폰 사용금액을 제외한 실 결제금액을 기준으로 적립됩니다.  <br>
+                  - 적용 상품이 제한되어 있는 할인쿠폰은 해당 적용 상품 외에는 사용하실 수 없습니다.</a
+                >
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </article>
 
       
-  <ul id="accordion" class="accordion">
-    <li class="show">
-      <div class="menu"><i class="fa fa-code"></i>Front-end<i class="fa fa-chevron-down"></i></div>
-      <ul class="submenu">
-        <li><a href="#">HTML</a></li>
-        <li><a href="#">CSS</a></li>
-        <li><a href="#">Javascript</a></li>
-      </ul>
-    </li>
-    <li>
-      <div class="menu"><i class="fa fa-mobile"></i>Responsive web<i class="fa fa-chevron-down"></i></div>
-      <ul class="submenu">
-        <li><a href="#">Tablets</a></li>
-        <li><a href="#">Mobiles</a></li>
-        <li><a href="#">Desktop</a></li>
-      </ul>
-    </li>
-    <li>
-      <div class="menu"><i class="fa fa-globe"></i>Web Browser<i class="fa fa-chevron-down"></i></div>
-      <ul class="submenu">
-        <li><a href="#">Chrome</a></li>
-        <li><a href="#">Firfox</a></li>
-        <li><a href="#">Safari</a></li>
-      </ul>
-    </li>
-  </ul>
-
     </div>
     <script>
-        class Accordion {
-          constructor(options) {
-            // 기본 옵션과 사용자 지정 옵션을 병합
-            this.config = Accordion.mergeConfig(options);
-            this.accordion = document.querySelector(this.config.selector);
-            // 이벤트 핸들러 내부의 this는 currentTartget
-            this.accordion.addEventListener('click', this.toogle.bind(this));
-          }
-      
-          static mergeConfig(options) {
-            // 기본 옵션
-            const config = {
-              selector: '#accordion',
-              multi: true
-            };
-      
-            return { ...config, ...options };
-          }
-      
-          toogle(event) {
-            if (!event.target.classList.contains('menu')) return;
-            // click 이벤트를 발생시킨 <div class="menu"> 요소의 부모 요소인 li 요소
-            const targetLi = event.target.parentNode;
-      
-            // 멀티 오픈을 허용하지 않으면 타깃 이외의 모든 서브메뉴를 클로즈한다.
-            if (!this.config.multi) {
-              [].filter.call(
-                this.accordion.childNodes,
-                li => li.nodeType === Node.ELEMENT_NODE && li !== targetLi
-              ).forEach(li => li.classList.remove('show'));
-            }
-      
-            // li 요소의 class에 "show"가 있으면 제거하고 없으면 추가한다.
-            targetLi.classList.toggle('show');
-          }
+      class Accordion {
+        constructor(options) {
+          // 기본 옵션과 사용자 지정 옵션을 병합
+          this.config = Accordion.mergeConfig(options);
+          this.accordion = document.querySelector(this.config.selector);
+          // 이벤트 핸들러 내부의 this는 currentTartget
+          this.accordion.addEventListener('click', this.toogle.bind(this));
         }
-      
-        window.onload = function () {
-          const accordion = new Accordion({ multi: false });
-          // const accordion = new Accordion();
-        };
-      </script>
+
+        static mergeConfig(options) {
+          // 기본 옵션
+          const config = {
+            selector: '#accordion',
+            multi: true,
+          };
+
+          return { ...config, ...options };
+        }
+
+        toogle(event) {
+          if (!event.target.classList.contains('menu')) return;
+          // click 이벤트를 발생시킨 <div class="menu"> 요소의 부모 요소인 li 요소
+          const targetLi = event.target.parentNode;
+
+          // 멀티 오픈을 허용하지 않으면 타깃 이외의 모든 서브메뉴를 클로즈한다.
+          if (!this.config.multi) {
+            [].filter
+              .call(
+                this.accordion.childNodes,
+                (li) => li.nodeType === Node.ELEMENT_NODE && li !== targetLi,
+              )
+              .forEach((li) => li.classList.remove('show'));
+          }
+
+          // li 요소의 class에 "show"가 있으면 제거하고 없으면 추가한다.
+          targetLi.classList.toggle('show');
+        }
+      }
+
+      window.onload = function () {
+        const accordion = new Accordion({ multi: false });
+        // const accordion = new Accordion();
+      };
+    </script>
   </body>
 </html>

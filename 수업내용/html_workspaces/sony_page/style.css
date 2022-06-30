@@ -6,6 +6,12 @@
   font-family: 'Gowun Dodum', 'Montserrat', 'Joan', serif, sans-serif;
   scroll-behavior: smooth;
 }
+body {
+ height: 100%;
+ width: 100%;
+
+}
+
 /*  header */
 .header__wrapper {
   display: flex;
@@ -123,7 +129,6 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-
   /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
@@ -284,12 +289,11 @@ h2 {
 .help-box {
   width: 80%;
   height: 75px;
-  margin-top: 30px;
   display: flex;
   justify-content: space-evenly;
 }
 .help-title {
-  font-size: 18px;
+  font-size: 10px;
 }
 .help-click {
   padding: 20px;
@@ -306,16 +310,12 @@ h2 {
 footer {
   /* margin-top: 50px; */
   width: 100%;
-  height: 100px;
+  /* height: 100px; */
   position: absolute;
   color: #bbb;
   background-color: black;
 }
-#wrap {
-  min-height: 100vh;
-  /* position: relative; */
-  width: 100%;
-}
+
 
 footer a {
   text-decoration: none;

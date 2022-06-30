@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+  />
+  <!-- Link Swiper's CSS -->
+  <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper/swiper-bundle.min.css"
+/>
+<link
+  href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+  rel="stylesheet"
+/>
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+   
+        <header class="header-wrapper">
+            <div class="logo-img"><img src="img/logo.png" alt="로고"></div>
+            <nav class="list-wrapper">
+                <ul class="menu">
+                    <li>Menu</li>
+                    <li>Store</li>
+                    <li>What's New</li>
+                    <li>Story</li>
+                </ul>
+                <ul class="util">
+                  <a href="#" style="background-color: #db0007;">임차문의</a>
+                  <a href="#" style="background-color: #d87e00;">RECRUIT</a>
+                  <a href="#"  style="background-color: #264a36;">ENG</a>
+                  <i class="ri-search-line"></i>
+                </ul>
+        </header>
+
+         <!-- Swiper -->
+         <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide img-box"><img src="img/swiper/1633532684256.png" width="100%" alt=""></div>
+              <div class="swiper-slide img-box"><img src="img/swiper/1652253813878.jpg" width="100%" alt=""></div>
+              <div class="swiper-slide img-box"><img src="img/swiper/1655282479287.jpg" width="100%" alt=""></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+
+          <div class="menu-wrapper">
+            <div class="menu-title">
+            <h1>McDonald's LIVE</h1>
+        </div>
+        <div class="menu-inner">
+            <div class="menu-list">
+            <div class="menu-img">
+                <img src="img/menu/1646730927037.png" alt="">
+            </div>
+            <div class="menu-content">
+                <p>버거 하나를 위해 보성까지 갔습니다.<br>
+                보성녹돈 버거 출시!</p>
+            </div>
+        </div>
+        <div class="menu-list">
+            <div class="menu-img">
+                <img src="img/menu/1653467599860.png" alt="">
+            </div>
+            <div class="menu-content">
+                <p>버거 하나를 위해 보성까지 갔습니다.<br>
+                보성녹돈 버거 출시!</p>
+            </div>
+        </div>
+        <div class="menu-list">
+            <div class="menu-img">
+                <img src="img/menu/1653979328770.png" alt="">
+            </div>
+            <div class="menu-content">
+                <p>버거 하나를 위해 보성까지 갔습니다.<br>
+                보성녹돈 버거 출시!</p>
+            </div>
+        </div>
+
+        <div class="menu-list">
+            <div class="menu-img">
+                <img src="img/menu/1653467599860.png" alt="">
+            </div>
+            <div class="menu-content">
+                <p>버거 하나를 위해 보성까지 갔습니다.<br>
+                보성녹돈 버거 출시!</p>
+            </div>
+        </div>
+
+        <div class="menu-list">
+            <div class="menu-img">
+                <img src="img/menu/1653467599860.png" alt="">
+            </div>
+            <div class="menu-content">
+                <p>버거 하나를 위해 보성까지 갔습니다.<br>
+                보성녹돈 버거 출시!</p>
+            </div>
+        </div>
+        </div>
+          </div>
+
+          <footer class="footer-wrapper">
+            <nav>
+              <a  class="github" href="https://github.com/2gyusung" target="_blank"><i class="ri-github-fill"></i>Github</a>
+              <p>
+              <span>저자 : leegyusung</span><br />
+              <span>이메일 : 97gyusung@gmail.com</span><br />
+              <span>Copyright 2022. 2gyusung. All Rights Reserved.</span>
+            </p>
+            </nav>
+            <div class="social">
+              <div class="social-title">
+              <p>Follow Us</p>
+            </div>
+              <i class="ri-instagram-line"></i>
+              <i class="ri-facebook-box-fill"></i>
+              <i class="ri-youtube-fill"></i>
+              <i class="ri-kakao-talk-fill"></i>
+            </div>
+          </footer>
+
+      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+          <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          spaceBetween: 30,
+          centeredSlides: true,
+          autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
+    
+</body>
+</html>
