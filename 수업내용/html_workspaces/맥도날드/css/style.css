@@ -107,8 +107,9 @@ img {
   object-fit: cover;
 }
 
-.menu-title {
-  margin: 15px;
+.menu-title h1{
+  margin: 35px;
+  padding: 12px;
 }
 
 .menu-img img {
