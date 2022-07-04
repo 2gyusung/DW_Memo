@@ -1,59 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;600;700&display=swap');
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-  }
-  img {
-    margin: 0;
-    padding: 0;
-    line-height: 0;
-    vertical-align: top;
-  }
-  .logo-img {
-    text-align: center;
-  }
-  .header-wrapper {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .menu-list {
-    width: 80%;
-  }
-  .menu {
-    display: flex;
-    justify-content: center;
-  }
-  .menu li {
-    list-style: none;
-    padding: 15px;
-    margin-top: 15px;
-    text-align: center;
-  }
-  .list-wrapper {
-    display: flex;
-    justify-content: space-between;
-  }
-  .util {
-    display: flex;
-    justify-content: space-between;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Gothic A1', sans-serif;
+}
 
-  
+
+img {
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+  vertical-align: top;
+}
+.logo-img img {
+  text-align: center;
+  width: auto;
+  height: 95px;
+  margin: 10px;
+}
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.menu-list {
+  width: 80%;
+}
+.menu {
+  display: flex;
+  justify-content: center;
+}
+.menu li {
+  list-style: none;
+  padding: 15px;
+  margin-top: 15px;
+  text-align: center;
+  font-weight: bold;
+}
+.menu-content p {
+  text-align: center;
+  padding: 15px;
+  margin: 12px;
+}
+.menu-inner div {
+  text-align: center;
+}
+.list-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.util {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+.util  i{
+  width: 100px;
+  height: 50px;
+  color: black;
+  font-size: 35px;
+  font-weight: 400;
+  line-height: 34px;
+  text-align: center;
+  border-radius: 54px;
+  padding: 3px;
+}
+
 .util a {
-    width: 80px;
-    text-decoration: none;
-    color: #fff;
-    border: 1px solid;
-    font-size: 8px;
-    font-weight: 600;
-    line-height: 34px;
-    text-align: center;
-    border-radius: 54px;
-    padding: 18px;
-    margin: 10px;
-  }
+  width: 100px;
+  height: 50px;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 34px;
+  text-align: center;
+  border-radius: 54px;
+  padding: 3px;
+}
 
   .inner{
     position: relative;
@@ -114,8 +142,8 @@
     display: inline-block;
     margin: 20px;
     border-radius: 8px;
-    height: 400px;
-    width: 260px;
+    height: 250px;
+    width: 500px;
     /* overflow 컨텐츠가 커서 보이기 힘들 때 사용*/
     /* visible(기본값)  hidden(넘치는 부분 자름)  scroll(스크롤바 추가)*/
     overflow: hidden;
@@ -124,9 +152,13 @@
     transform: scale(1);
     transition: 0.7s;
   }
+  .card:hover{
+    transition: 0.1s;
+    border: 0.5px solid #ffbc0d;
+  }
  .card img {
     width: 260px;
-    height: 260px;
+    height: 150px;
   }
   /* 텍스트 div*/
   .text-wrap {
@@ -138,13 +170,11 @@
     /* 텍스트 굵기*/
     font-weight: 12px;
     font-weight: bold;
-    font-family: 'BMYEONSUNG';
   }
   /*텍스트 p */
   .text-wrap p {
     /**/
     line-height: 1.8;
-    font-family: 'BMYEONSUNG';
   }
   
   footer a {

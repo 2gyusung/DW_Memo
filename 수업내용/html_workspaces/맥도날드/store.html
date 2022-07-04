@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Store</title>
     <link rel="stylesheet" href="css/store.css">
     <link
     rel="stylesheet"
@@ -16,22 +16,22 @@
   />
 </head>
 <body>
-    
-    <header class="header-wrapper">
-        <div class="logo-img"><img src="img/logo.png" alt="로고"></div>
-        <nav class="list-wrapper">
-            <ul class="menu">
-                <li>Menu</li>
-                <li>Store</li>
-                <li>What's New</li>
-                <li>Story</li>
-            </ul>
-            <ul class="util">
-              <a href="#" style="background-color: #db0007;">임차문의</a>
-              <a href="#" style="background-color: #d87e00;">RECRUIT</a>
-              <a href="#"  style="background-color: #264a36;">ENG</a>
-            </ul>
-    </header>
+  <header class="header-wrapper">
+    <div class="logo-img"><img src="img/logo.png" alt="로고"></div>
+    <nav class="list-wrapper">
+        <ul class="menu">
+            <li>Menu</li>
+            <li>Store</li>
+            <li>What's New</li>
+            <li>Story</li>
+        </ul>
+        <ul class="util">
+          <a href="#" style="background-color: #db0007;">임차문의</a>
+          <a href="#" style="background-color: #d87e00;">RECRUIT</a>
+          <a href="#"  style="background-color: #264a36;">ENG</a>
+          <i class="ri-search-line"></i>
+        </ul>
+</header>
 
     
     <div class="inner">
@@ -54,16 +54,28 @@
     </div>
 
         <div class="map-content">
+          <div class="map-label-wrapper">
             <div class="map-label"><img src="img/store/1580887217994.png" alt=""><div class="label-txt">24시간</div></div>
             <div class="map-label"><img src="img/store/1580887307761.png" alt=""><div class="label-txt">맥드라이브</div></div>
             <div class="map-label"><img src="img/store/1580887371824.png" alt=""><div class="label-txt">맥딜리버리</div></div>
             <div class="map-label"><img src="img/store/1580887410227.png" alt=""><div class="label-txt">맥모닝</div></div>
             <div class="map-label"><img src="img/store/1580887501964.png" alt=""><div class="label-txt">주차</div></div>
             <div class="map-label"><img src="img/store/1580887849368.png" alt=""><div class="label-txt">디카페인 커피</div></div>
+          </div>
+          <div class="map-search">
+            <input class="txt-search"  type="text" placeholder="매장명,동명,도로명을 검색해주세요.">
+            <div class="map-click" style="background-color: #ffbc0d;">
+              <p >검색하기</p>
+            </div>
+
+          </div>
         </div>
 
-
-
+        <div id="map" style="width:500px;height:400px; margin: 15px auto 0; padding: 10px;"></div>
+        
+        <div class="map" style="background-color: #ffbc0d;">
+          <p>내 위치 중심으로 검색하기 </p>
+        </div>
     <footer class="footer-wrapper">
         <nav>
           <a  class="github" href="https://github.com/2gyusung" target="_blank"><i class="ri-github-fill"></i>Github</a>
@@ -83,6 +95,15 @@
           <i class="ri-kakao-talk-fill"></i>
         </div>
       </footer>
-
-</body>
+      <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=280b6a96be0d763f418efe9040abfdd5"></script>
+     <script>
+      var container = document.getElementById('map');
+      var options = {
+        center: new kakao.maps.LatLng(33.450701, 126.570667),
+        level: 3
+      };
+  
+      var map = new kakao.maps.Map(container, options);
+      </script>
+    </body>
 </html>
