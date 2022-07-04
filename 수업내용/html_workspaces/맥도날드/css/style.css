@@ -157,3 +157,9 @@ footer a {
   font-weight: 600;
   padding: 15px;
 }
+@media screen and (max-width:1300px){}
+@media screen and  (max-width :1100px){}
+@media screen and (max-width: 960px) {}
+@media screen and (max-width : 820px) {}
+@media screen and (max-width: 768px) {}
+@media screen and (max-width: 480px){}
