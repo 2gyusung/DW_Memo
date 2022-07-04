@@ -177,3 +177,7 @@ footer a {
   border: 1px solid #bbb;
   border-radius: 12px;
 }
+.map-click{
+  padding: 8px;
+  text-align: center;
+}
