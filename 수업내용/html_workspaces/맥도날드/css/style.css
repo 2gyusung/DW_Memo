@@ -229,6 +229,12 @@ footer a {
 @media screen and (max-width: 820px) {
 }
 @media screen and (max-width: 768px) {
+  /* .menu-img img{
+    width: 220px;
+  } */
+  .menu-list{
+    width: 350px;
+  }
  
   .menu-title{
     text-align: center;
