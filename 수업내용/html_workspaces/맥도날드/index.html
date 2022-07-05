@@ -24,28 +24,49 @@
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 </head>
 <body>
-   
-        <header class="header-wrapper">
-            <div class="logo-img"><img src="img/logo.png" alt="로고"></div>
-            <nav class="list-wrapper">
-               <ul class="menu">
-                    <li><a href="menulist.html">Menu</a></li>
-                    <li><a href="store.html">Store</a></li>
-                    <li><a href="promotion.html">What's New</a></li>
-                    <li><a href="story.html">Stroy</a></li>
-                </ul> 
-                <ul class="util">
-                  <a href="#" style="background-color: #db0007;">임차문의</a>
-                  <a href="#" style="background-color: #d87e00;">RECRUIT</a>
-                  <a href="#"  style="background-color: #264a36;">ENG</a>
-                  <i class="ri-search-line"></i>
-                </a>
-              </ul>
-              <div>
-              <a href="#" class="navbar__toggleBtn">
-                <i class="ri-menu-line"></i></a>
-              </div>
-        </header>
+  <!--    
+          <header class="header-wrapper">
+              <div class="logo-img"><img src="img/logo.png" alt="로고"></div>
+              <nav class="list-wrapper">
+                 <ul class="menu">
+                      <li><a href="menulist.html">Menu</a></li>
+                      <li><a href="store.html">Store</a></li>
+                      <li><a href="promotion.html">What's New</a></li>
+                      <li><a href="story.html">Stroy</a></li>
+                  </ul> 
+                  <ul class="util">
+                    <a href="#" style="background-color: #db0007;">임차문의</a>
+                    <a href="#" style="background-color: #d87e00;">RECRUIT</a>
+                    <a href="#"  style="background-color: #264a36;">ENG</a>
+                    <i class="ri-search-line"></i>
+                  </a>
+                </ul>
+                <div>
+                <a href="#" class="navbar__toggleBtn">
+                  <i class="ri-menu-line"></i></a>
+                </div>
+          </header> -->
+   <nav class="navbar">
+    <div class="navbar__logo">
+      <img src="img/logo.png" alt="로고"></div>
+    </div>
+      <ul class="navbar__menu">
+        <li><a href="menulist.html">Menu</a></li>
+        <li><a href="store.html">Store</a></li>
+        <li><a href="promotion.html">What's New</a></li>
+        <li><a href="story.html">Stroy</a></li>
+    </ul> 
+      <ul class="navbar__icons util">
+        <a href="#" style="background-color: #db0007;">임차문의</a>
+        <a href="#" style="background-color: #d87e00;">RECRUIT</a>
+        <a href="#"  style="background-color: #264a36;">ENG</a>
+      </a>
+        <i class="ri-search-line"></i>       
+    </ul>
+    <a href="#" div class="navbar__toggleBtn">
+    <i class="ri-menu-line"></i>
+  </a>
+   </nav>
 
          <!-- Swiper -->
          <div class="swiper mySwiper">
@@ -163,6 +184,15 @@
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
           },
+        });
+
+        const toggleBtn = document.querySelector('.navbar__toggleBtn');
+        const menu =  document.querySelector('.navbar__menu');
+        const icons = document.querySelector('.navbar__icons');
+
+        toggleBtn.addEventListener('click', ()=>{
+          menu.classList.toggle('active')
+          icons.classList.toggle('active')
         });
       </script>
     
