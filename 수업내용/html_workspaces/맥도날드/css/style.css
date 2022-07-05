@@ -162,7 +162,7 @@ footer a {
   justify-content: space-between;
   align-items: center;
   background-color: white;
-  color: black;
+
   padding: 8px 12px;
 }
 .navbar__menu{
@@ -170,6 +170,11 @@ footer a {
   list-style: none;
   padding-left: 0;
 }
+.navbar__menu a{
+  color: black;
+  text-decoration: none;
+}
+
 .navbar__menu li{
   padding: 8px 12px;
 }
@@ -224,6 +229,15 @@ footer a {
 @media screen and (max-width: 820px) {
 }
 @media screen and (max-width: 768px) {
+ 
+  .menu-title{
+    text-align: center;
+    padding: 25px;
+  }
+  .menu-inner{
+    display: flex;
+    flex-direction: column;
+  }
   .navbar{
     flex-direction: column;
     align-items: flex-start;
@@ -235,6 +249,8 @@ footer a {
     flex-direction: column;
     align-items: center;
     width: 100%;
+    text-align: center;
+   
   }
   .navbar__menu li{
     width: 100%;
@@ -243,10 +259,15 @@ footer a {
   .navbar__icons{
     display: none;
     justify-content: center;
-    width: 100%;
+    width: 100%; padding: 10px;
+    margin: 15px 15px;
+    text-align: center;
+   
   }
   .navbar__toggleBtn {
     display: block;
+    font-size: 42px;
+    padding: 15px;
   }
   .navbar__menu.active,
   .navbar__icons.active{

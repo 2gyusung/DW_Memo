@@ -16,22 +16,27 @@
   />
 </head>
 <body>
-  <header class="header-wrapper">
-    <div class="logo-img"><img src="img/logo.png" alt="로고"></div>
-    <nav class="list-wrapper">
-        <ul class="menu">
-            <li>Menu</li>
-            <li>Store</li>
-            <li>What's New</li>
-            <li>Story</li>
-        </ul>
-        <ul class="util">
-          <a href="#" style="background-color: #db0007;">임차문의</a>
-          <a href="#" style="background-color: #d87e00;">RECRUIT</a>
-          <a href="#"  style="background-color: #264a36;">ENG</a>
-          <i class="ri-search-line"></i>
-        </ul>
-</header>
+  <nav class="navbar">
+    <div class="navbar__logo">
+      <img src="img/logo.png" alt="로고"></div>
+    </div>
+      <ul class="navbar__menu">
+        <li><a href="menulist.html">Menu</a></li>
+        <li><a href="store.html">Store</a></li>
+        <li><a href="promotion.html">What's New</a></li>
+        <li><a href="story.html">Stroy</a></li>
+    </ul> 
+      <ul class="navbar__icons util">
+        <a href="#" style="background-color: #db0007;">임차문의</a>
+        <a href="#" style="background-color: #d87e00;">RECRUIT</a>
+        <a href="#"  style="background-color: #264a36;">ENG</a>
+      </a>
+        <i class="ri-search-line"></i>       
+    </ul>
+    <a href="#" div class="navbar__toggleBtn">
+    <i class="ri-menu-line"></i>
+  </a>
+   </nav>
 
     
     <div class="inner">
@@ -78,7 +83,7 @@
         </div>
     <footer class="footer-wrapper">
         <nav>
-          <a  class="github" href="https://github.com/2gyusung" target="_blank"><i class="ri-github-fill"></i>Github</a>
+          <a class="github" href="https://github.com/2gyusung" target="_blank"><i class="ri-github-fill"></i>Github</a>
           <p>
           <span>저자 : leegyusung</span><br />
           <span>이메일 : 97gyusung@gmail.com</span><br />
@@ -96,14 +101,14 @@
         </div>
       </footer>
       <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=280b6a96be0d763f418efe9040abfdd5"></script>
-     <script>
-      var container = document.getElementById('map');
-      var options = {
-        center: new kakao.maps.LatLng( 36.38053260834592, 127.37837374866221),
-        level: 3
-      };
-  
-      var map = new kakao.maps.Map(container, options);
-      </script>
-    </body>
+      <script>
+       var container = document.getElementById('map');
+       var options = {
+         center: new kakao.maps.LatLng(33.450701, 126.570667),
+         level: 3
+       };
+ 
+       var map = new kakao.maps.Map(container, options);
+       </script>
+     </body>
 </html>
