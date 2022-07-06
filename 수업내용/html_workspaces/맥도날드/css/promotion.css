@@ -216,8 +216,10 @@ footer a {
 .tab_menu .list {
   overflow: hidden;
   border: 1px solid black;
-
-  padding: 50px;
+  margin: 50px;
+}
+.tab_menu .list li a{
+  text-align: center;
 }
 .tab_menu .list a {
   padding: 15px;

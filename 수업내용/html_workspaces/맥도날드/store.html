@@ -76,10 +76,10 @@
           </div>
         </div>
 
-        <div id="map" style="width:500px;height:400px; margin: 15px auto 0; padding: 10px;"></div>
+        <div id="map" style="width:1200px;height:400px; margin: 15px auto 0; padding: 10px;"></div>
         
         <div class="map-click" style="background-color: #ffbc0d;">
-          <p>내 위치 중심으로 검색하기 </p>
+          <p>내 위치 중심으로<br>검색하기 </p>
         </div>
 
         <div class="map-info">
@@ -108,7 +108,7 @@
                     <dd>대전 중구 중앙로 64</dd>
                   </dl>
                 </td>
-                <td>
+                <td class="cell-num">
                   070-7017-1430
                   <br>
                   070-7017-2430
@@ -117,11 +117,11 @@
                   08:00 ~24:00
                 </td>
                 <td class="tb-service">
-                  <span><img src="img/store/1580887501964.png" alt=""><p>맥드라이브</p></span>
-                  <span><img src="img/store/1580887307761.png" alt=""><p>주차</p></span>
-                  <span><img src="img/store/1580887849368.png" alt=""><p>디카페인</p></span>
-                  <span><img src="img/store/1580887371824.png" alt=""><p>맥딜리버리</p></span>
-                  <span><img src="img/store/1580887410227.png" alt=""><p>맥모닝</p></span>
+                  <span><img src="img/store/1580887501964.png" alt="">맥드라이브</span>
+                  <span><img src="img/store/1580887307761.png" alt="">주차</span>
+                  <span><img src="img/store/1580887849368.png" alt="">디카페인</span>
+                  <span><img src="img/store/1580887371824.png" alt="">맥딜리버리</span>
+                  <span><img src="img/store/1580887410227.png" alt="">맥모닝</span>
                   
                   <tr>
                     <td>
@@ -133,7 +133,7 @@
                         <dd>대전 중구 중앙로 64</dd>
                       </dl>
                     </td>
-                    <td>
+                    <td class="cell-num">
                       070-7209-0330
                     </td>
                     <td>
@@ -163,7 +163,7 @@
                     <dd>대전 서구 도산로 324</dd>
                   </dl>
                 </td>
-                <td>
+                <td class="cell-num">
                   070-7017-6437
                 <td>
                   24시간
@@ -189,7 +189,7 @@
                     <dd>대전 중구 계백로 1549 (유천동)</dd>
                   </dl>
                 </td>
-                <td>
+                <td class="cell-num">
                   070-7209-0925
                 </td>
                 <td>
@@ -216,7 +216,7 @@
                     <dd>대전 서구 둔산로 201 (하계동)</dd>
                   </dl>
                 </td>
-                <td>
+                <td class="cell-num">
                   070-7017-0390
                   <br>
                   070-7017-0317
@@ -319,6 +319,17 @@
             // 지도 중심좌표를 접속위치로 변경합니다
             map.setCenter(locPosition);      
         }    
+
+        
+
+        const toggleBtn = document.querySelector('.navbar__toggleBtn');
+        const menu =  document.querySelector('.navbar__menu');
+        const icons = document.querySelector('.navbar__icons');
+
+        toggleBtn.addEventListener('click', ()=>{
+          menu.classList.toggle('active')
+          icons.classList.toggle('active')
+        });
         </script>
      </body>
 </html>

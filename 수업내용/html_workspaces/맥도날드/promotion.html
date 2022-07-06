@@ -18,7 +18,7 @@ rel="stylesheet"
 <body>
     <nav class="navbar">
         <div class="navbar__logo">
-          <img src="img/logo.png" alt="로고"></div>
+          <img src="img/2d3c123fb0fee0130b5f40a2250a4d06.jpg" alt="로고" width="100px" ></div>
         </div>
           <ul class="navbar__menu">
             <li><a href="menulist.html">Menu</a></li>
@@ -50,8 +50,8 @@ rel="stylesheet"
     </div>
     </div>
     <div class="tab_menu">
-        <ul class="list">
-          <li class="is_on">
+        <ul class="list" style="text-align: center";>
+          <li class="is_on" >
             <a href="#tab1" class="btn">전체보기</a>
             <div class="menu-inner cont"  id="tab1">
                 <div class="menu-list">
@@ -179,7 +179,7 @@ rel="stylesheet"
           </li>
           <li>
             <a href="#tab3" class="btn">종료</a>
-            <div id="tab3" class="cont">종료된 행사입니다</div>
+            <div id="tab3" class="cont"><span style="text-align: center;">종료된 행사입니다</span></div>
           </li>
         </ul>
       </div>
@@ -198,6 +198,15 @@ rel="stylesheet"
             this.parentNode.classList.add('is_on');
           });
         }
+
+        const toggleBtn = document.querySelector('.navbar__toggleBtn');
+        const menu =  document.querySelector('.navbar__menu');
+        const icons = document.querySelector('.navbar__icons');
+
+        toggleBtn.addEventListener('click', ()=>{
+          menu.classList.toggle('active')
+          icons.classList.toggle('active')
+        });
       </script>
 </body>
 </html>
