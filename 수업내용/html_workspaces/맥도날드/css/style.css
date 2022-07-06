@@ -240,8 +240,8 @@ footer a {
     padding: 25px;
   }
   .menu-inner {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
   .navbar {
     flex-direction: column;
