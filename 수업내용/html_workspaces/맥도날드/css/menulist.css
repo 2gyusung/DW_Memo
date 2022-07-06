@@ -1,10 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;600;700&display=swap');
-* {
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital@0;1&family=Gowun+Dodum&family=Quicksand:wght@300&display=swap');* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  font-family: 'Gothic A1', sans-serif;
+  font-family: 'Gowun Dodum','Quicksand','Gentium Book Plus','Gothic A1', sans-serif;
 }
 
 img {
@@ -131,6 +130,8 @@ footer {
   grid-template-rows: repeat(3, auto);
   grid-template-columns: repeat(3, 1fr);
   padding: 15px;
+  width: 85%;
+  margin: 15px;
   text-align: center;
 }
 .card {
@@ -309,11 +310,25 @@ footer a {
     display: flex;
   }
   .card-wrapper {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+    width: 250px;
+  }
+  .card {
+    margin: 40px 60px;
     text-align: center;
-    flex-direction: column;
-    padding: 35px;
-    width: auto;
+    width: 230px;
+
+  }
+  .card h1{
+    font-size: 24px;
+    text-align: center;
+
+  }
+  .card p{
+    font-size: 16px;
+    text-align: center;
   }
 }
 @media screen and (max-width: 480px) {

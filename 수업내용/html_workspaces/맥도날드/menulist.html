@@ -60,7 +60,7 @@
      <div class="card-wrapper">
      <div class="card">
         <!-- crtl+ space bar 파일 경로 불러오기 -->
-        <img src="img/menu-list/부엉이/1656407881103.png" alt="" />
+        <img src="img/햄버거/보성녹돈.png" alt="" />
         <!-- 텍스트 객체 -->
         <div class="text wrap">
           <h1>보성녹돈 버거</h1>
@@ -69,7 +69,7 @@
       </div>
       <div class="card">
         <!-- crtl+ space bar 파일 경로 불러오기 -->
-        <img src="img/menu-list/부엉이/1653436835912.png" alt="" />
+        <img src="img/햄버거/맥크리스피.png" alt="" />
         <!-- 텍스트 객체 -->
         <div class="text wrap">
           <h1>맥크리스피™ 디럭스 버거</h1>
@@ -79,7 +79,7 @@
 
       <div class="card">
         <!-- crtl+ space bar 파일 경로 불러오기 -->
-        <img src="img/menu-list/부엉이/1583728339451.png" alt="" />
+        <img src="img/햄버거/빅맥.png" alt="" />
         <!-- 텍스트 객체 -->
         <div class="text wrap">
           <h1>맥치킨® 모짜렐라</h1>
@@ -88,7 +88,7 @@
       </div>
       <div class="card">
         <!-- crtl+ space bar 파일 경로 불러오기 -->
-        <img src="img/menu-list/부엉이/1583727633823.png" alt="" />
+        <img src="img/햄버거/상하이.png" alt="" />
         <!-- 텍스트 객체 -->
         <div class="text wrap">
           <h1>맥크리스피™ 디럭스 버거</h1>
@@ -97,13 +97,41 @@
       </div>
       <div class="card">
         <!-- crtl+ space bar 파일 경로 불러오기 -->
-        <img src="img/menu-list/부엉이/1583727633823.png" alt="" />
+        <img src="img/햄버거/필레오피쉬.png" alt="" />
         <!-- 텍스트 객체 -->
         <div class="text wrap">
           <h1>맥크리스피™ 클래식 버거</h1>
           <p>McCrispy™ Classic Burger</p>
         </div>
       </div>
+
+      <div class="card">
+        <!-- crtl+ space bar 파일 경로 불러오기 -->
+        <img src="img/햄버거/더블플레오피쉬.png" alt="" />
+        <!-- 텍스트 객체 -->
+        <div class="text wrap">
+          <h1>맥크리스피™ 클래식 버거</h1>
+          <p>McCrispy™ Classic Burger</p>
+        </div>
+      </div>
+      <div class="card">
+        <!-- crtl+ space bar 파일 경로 불러오기 -->
+        <img src="img/햄버거/맥크리스피 클래식.png" alt="" />
+        <!-- 텍스트 객체 -->
+        <div class="text wrap">
+          <h1>맥크리스피™ 클래식 버거</h1>
+          <p>McCrispy™ Classic Burger</p>
+        </div>
+    </div>
+    <div class="card">
+      <!-- crtl+ space bar 파일 경로 불러오기 -->
+      <img src="img/햄버거/1955.png" alt="" />
+      <!-- 텍스트 객체 -->
+      <div class="text wrap">
+        <h1>맥크리스피™ 클래식 버거</h1>
+        <p>McCrispy™ Classic Burger</p>
+      </div>
+    </div>
     </div>
     
 
@@ -126,5 +154,16 @@
           <i class="ri-kakao-talk-fill"></i>
         </div>
       </footer>
+      <script>      
+      const toggleBtn = document.querySelector('.navbar__toggleBtn');
+      const menu =  document.querySelector('.navbar__menu');
+      const icons = document.querySelector('.navbar__icons');
+
+      toggleBtn.addEventListener('click', ()=>{
+        menu.classList.toggle('active')
+        icons.classList.toggle('active')
+
+      });
+      </script>
 </body>
 </html>

@@ -357,9 +357,10 @@ td {
     padding: 14px;
   }
   .map-click {
-    width: 100px;
+    width: 150px;
+    margin: 25px;
     text-align: center;
-    padding: 13px;
+    padding: 18px;
     font-size: 12px;
   }
   .map_table__inner thead tbody {
@@ -389,7 +390,7 @@ td {
     padding: 75px;
   } */
   footer{
-    width: 760;
+    width: 745px;
   }
 
  
