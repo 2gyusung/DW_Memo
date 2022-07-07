@@ -48,13 +48,22 @@ rel="stylesheet"
             <li>맥호우날드 프로모션</li>
         </ul>
     </div>
-    </div>
-    <div class="tab_menu" style="margin: 0 45px; padding: 25px; text-align: center;" >
-        <ul class="list" style="text-align: center";>
-          <li class="is_on" >
-            <a href="#tab1" class="btn" >전체보기</a>
-            <div class="menu-inner cont"  id="tab1">
-                <div class="menu-list">
+    <div class="tab_basic">
+        <div class="tab_list_wrap">
+          <div class="tab_list tab_active" data-tabnum="0">
+            <a href="#">전체보기</a>
+          </div>
+          <div class="tab_list" data-tabnum="1">
+            <a href="#">진행중</a>
+          </div>
+          <div class="tab_list" data-tabnum="2">
+            <a href="#">종료</a>
+          </div>
+        </div>
+        <div class="tab_container">
+            <div class="tab_content">
+              <div class="tab_wrapper">
+                <div class="tab_inner">
                 <div class="menu-img">
                     <img src="img/menu/1656466890614.jpg" alt="">
                 </div>
@@ -63,7 +72,8 @@ rel="stylesheet"
                     보성녹돈 버거 출시!</p>
                 </div>
             </div>
-            <div class="menu-list">
+
+            <div class="tab_inner">
                 <div class="menu-img">
                     <img src="img/menu/1656467182899.jpg" alt="">
                 </div>
@@ -72,7 +82,8 @@ rel="stylesheet"
                     일상 속 확실한 행복을 즐겨요</p>
                 </div>
             </div>
-            <div class="menu-list">
+
+            <div class="tab_inner">
                 <div class="menu-img">
                     <img src="img/menu/1653467599860.png" alt="">
                 </div>
@@ -81,18 +92,18 @@ rel="stylesheet"
                     먹어봐야 아는 맛! 맥크리스피 출시!</p>
                 </div>
             </div>
-          
-            <div class="menu-list">
+
+            <div class="tab_inner">
                 <div class="menu-img">
                     <img src="img/menu/1655282749763.jpg" alt="">
                 </div>
                 <div class="menu-content">
                     <p>달콤한 아이스크림과 진~한 라떼의 만남!<br>
-                    아이스크림 라떼 출시!</p>
+                        아이스크림 라떼 출시!</p>
                 </div>
             </div>
-          
-            <div class="menu-list">
+
+            <div class="tab_inner">
                 <div class="menu-img">
                     <img src="img/menu/1653979328770.png" alt="">
                 </div>
@@ -101,62 +112,33 @@ rel="stylesheet"
                     2202년 맥윙 출시!</p>
                 </div>
             </div>
-          
-            <div class="menu-list">
-              <div class="menu-img">
-                  <img src="img/menu/1646730927037.png" alt="">
-              </div>
-              <div class="menu-content">
-                  <p>첫 적립 시 1500포인트 제공!<br>
-                  마이 맥도날드 리워드 출시!</p>
-              </div>
-          </div>
+            
+            <div class="tab_inner">
+                <div class="menu-img">
+                    <img src="img/menu/1646730927037.png" alt="">
+                </div>
+                <div class="menu-content">
+                    <p>첫 적립 시 1500포인트 제공!<br>
+                        마이 맥도날드 리워드 출시!</p>
+                </div>
             </div>
-            </li>
-          </li>
-          <li>
-            <a href="#tab2" class="btn">진행중</a>
-            <div id="tab2" class="cont">
-                <div class="menu-inner cont"  id="tab1">
-                    <div class="menu-list">
+            
+        </div>  
+        </div>
+          
+          <div class="tab_content">
+            <div class="tab_wrapper">
+                <div class="tab_inner">
                     <div class="menu-img">
-                        <img src="img/menu/1656466890614.jpg" alt="">
+                        <img src="img/menu/1646730927037.png" alt="">
                     </div>
                     <div class="menu-content">
-                        <p>버거 하나를 위해 보성까지 갔습니다.<br>
-                        보성녹돈 버거 출시!</p>
+                        <p>첫 적립 시 1500포인트 제공!<br>
+                            마이 맥도날드 리워드 출시!</p>
                     </div>
                 </div>
-                <div class="menu-list">
-                    <div class="menu-img">
-                        <img src="img/menu/1656467182899.jpg" alt="">
-                    </div>
-                    <div class="menu-content">
-                        <p>NEW 해피스낵,<br>
-                        일상 속 확실한 행복을 즐겨요</p>
-                    </div>
-                </div>
-                <div class="menu-list">
-                    <div class="menu-img">
-                        <img src="img/menu/1653467599860.png" alt="">
-                    </div>
-                    <div class="menu-content">
-                        <p>겉바속촉 100% 통닭다리살!<br>
-                        먹어봐야 아는 맛! 맥크리스피 출시!</p>
-                    </div>
-                </div>
-              
-                <div class="menu-list">
-                    <div class="menu-img">
-                        <img src="img/menu/1655282749763.jpg" alt="">
-                    </div>
-                    <div class="menu-content">
-                        <p>달콤한 아이스크림과 진~한 라떼의 만남!<br>
-                        아이스크림 라떼 출시!</p>
-                    </div>
-                </div>
-              
-                <div class="menu-list">
+
+                <div class="tab_inner">
                     <div class="menu-img">
                         <img src="img/menu/1653979328770.png" alt="">
                     </div>
@@ -165,39 +147,62 @@ rel="stylesheet"
                         2202년 맥윙 출시!</p>
                     </div>
                 </div>
-              
-                <div class="menu-list">
-                  <div class="menu-img">
-                      <img src="img/menu/1646730927037.png" alt="">
-                  </div>
-                  <div class="menu-content">
-                      <p>첫 적립 시 1500포인트 제공!<br>
-                      마이 맥도날드 리워드 출시!</p>
-                  </div>
-              </div>
-            </div>
-          </li>
-          <li>
-            <a href="#tab3" class="btn">종료</a>
-            <div id="tab3" class="cont"><span style="text-align: center;">종료된 행사입니다</span></div>
-          </li>
-        </ul>
+
+
+                <div class="tab_inner">
+                    <div class="menu-img">
+                        <img src="img/menu/1655282749763.jpg" alt="">
+                    </div>
+                    <div class="menu-content">
+                        <p>달콤한 아이스크림과 진~한 라떼의 만남!<br>
+                            아이스크림 라떼 출시!</p>
+                    </div>
+                </div>
+
+                <div class="tab_inner">
+                    <div class="menu-img">
+                        <img src="img/menu/1653467599860.png" alt="">
+                    </div>
+                    <div class="menu-content">
+                        <p>겉바속촉 100% 통닭다리살!<br>
+                        먹어봐야 아는 맛! 맥크리스피 출시!</p>
+                    </div>
+                </div>
+          </div>
+        </div>
+        <div class="tab_content">
+            <div class="tab_wrapper">
+                <div class="tab_inner">
+                    <p class="end-txt" style="text-align: center;">종료된 프로모션입니다.</p>
+                    </div>
+          </div>
+          </div>
+        </div>
       </div>
+    </div>
+    
+    </div>
  
        </div>
 
        <script>
-        const tabList = document.querySelectorAll('.tab_menu .list li');
-        
-        for(var i = 0; i < tabList.length; i++){
-          tabList[i].querySelector('.btn').addEventListener('click', function(e){
-            e.preventDefault();
-            for(var j = 0; j < tabList.length; j++){
-              tabList[j].classList.remove('is_on');
-            }
-            this.parentNode.classList.add('is_on');
-          });
-        }
+    var tabList = document.querySelectorAll('.tab_list_wrap .tab_list')
+    Array.prototype.forEach.call(tabList, function(list) {
+    list.children[0].addEventListener('click', function(e) {
+    e.preventDefault()
+    var tabContent = document.querySelectorAll('.tab_container .tab_content')
+    var tabNum = this.parentElement.getAttribute('data-tabnum')
+    Array.prototype.forEach.call(tabContent, function(cont, i) {
+    cont.style.display = 'none'
+    tabList[i].className = 'tab_list'
+    })
+    tabContent[tabNum].style.display = 'block'
+    if(list.className.indexOf('tab_active') == -1) {
+    list.className = 'tab_list tab_active'
+    }
+    })
+    })
+
 
         const toggleBtn = document.querySelector('.navbar__toggleBtn');
         const menu =  document.querySelector('.navbar__menu');

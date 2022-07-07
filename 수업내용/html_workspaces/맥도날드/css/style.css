@@ -5,7 +5,8 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  font-family: 'Gowun Dodum','Quicksand','Gentium Book Plus','Gothic A1', sans-serif;
+  font-family: 'Gowun Dodum', 'Quicksand', 'Gentium Book Plus', 'Gothic A1',
+    sans-serif;
 }
 img {
   margin: 0;
@@ -201,6 +202,19 @@ footer a {
   right: 15px;
   font-size: 24px;
   color: black;
+}
+a:nth-child(1) {
+  text-align: center;
+  margin: 15px 0;
+}
+a:nth-child(2) {
+  text-align: center;
+  margin: 15px 0;
+}
+
+a:nth-child(3) {
+  text-align: center;
+  margin: 15px 0;
 }
 
 /* .navbar__toggleBtn {

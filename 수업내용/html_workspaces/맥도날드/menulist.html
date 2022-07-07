@@ -20,7 +20,7 @@
   <nav class="navbar">
     <div class="navbar__logo">
       <img src="img/logo.png" alt="로고"><a href="index.html"></a></div>
-    </div>
+  </div>
       <ul class="navbar__menu">
         <li><a href="menulist.html">Menu</a></li>
         <li><a href="store.html">Store</a></li>
@@ -42,7 +42,7 @@
     <div class="inner">
         <img src="img/menu-list/bg_visual_menu01.jpg" alt="" style="background-size: cover; min-height: 220px;">
         <div class="store-txt">
-        <p>매장찾기</p>
+        <p>버거</p>
         <ul>
             <li>Home</li>
             <li>Store</li>
@@ -51,87 +51,146 @@
     </div>
     </div>
 
-    <div class="map-wrapper">
-        <ul class="menu-wrapper">
-         <li><p>단품메뉴</p></li>
-         <li><p>세트메뉴</p></li>
-        </ul>
-     </div>
-     <div class="card-wrapper">
-     <div class="card">
-        <!-- crtl+ space bar 파일 경로 불러오기 -->
-        <img src="img/햄버거/보성녹돈.png" alt="" />
-        <!-- 텍스트 객체 -->
-        <div class="text wrap">
-          <h1>보성녹돈 버거</h1>
+
+     <div class="tab_basic">
+      <div class="tab_list_wrap">
+        <div class="tab_list tab_active" data-tabnum="0">
+          <a href="#">햄버거</a>
+        </div>
+        <div class="tab_list" data-tabnum="1">
+          <a href="#">사이드/디저트</a>
+        </div>
+        <div class="tab_list" data-tabnum="2">
+          <a href="#">맥카페/음료</a>
+        </div>
+      </div>
+      <div class="tab_container">
+          <div class="tab_content">
+            <div class="tab_wrapper">
+              <div class="tab_inner">
+              <div class="menu-img">
+                <img src="img/햄버거/보성녹돈.png" alt="" />
+              </div>
+              <div class="menu-content">
+                <h1>보성녹돈 버거</h1>
           <p>Boseong Green Tea Pork Burger</p>
-        </div>
-      </div>
-      <div class="card">
-        <!-- crtl+ space bar 파일 경로 불러오기 -->
-        <img src="img/햄버거/맥크리스피.png" alt="" />
-        <!-- 텍스트 객체 -->
-        <div class="text wrap">
-          <h1>맥크리스피™ 디럭스 버거</h1>
-          <p>McCrispy™ Delux Burger</p>
-        </div>
-      </div>
+              </div>
+          </div>
 
-      <div class="card">
-        <!-- crtl+ space bar 파일 경로 불러오기 -->
-        <img src="img/햄버거/빅맥.png" alt="" />
-        <!-- 텍스트 객체 -->
-        <div class="text wrap">
-          <h1>맥치킨® 모짜렐라</h1>
-          <p>McChicken® Mozzarella</p>
-        </div>
-      </div>
-      <div class="card">
-        <!-- crtl+ space bar 파일 경로 불러오기 -->
-        <img src="img/햄버거/상하이.png" alt="" />
-        <!-- 텍스트 객체 -->
-        <div class="text wrap">
-          <h1>맥크리스피™ 디럭스 버거</h1>
-          <p>McCrispy™ Delux Burger</p>
-        </div>
-      </div>
-      <div class="card">
-        <!-- crtl+ space bar 파일 경로 불러오기 -->
-        <img src="img/햄버거/필레오피쉬.png" alt="" />
-        <!-- 텍스트 객체 -->
-        <div class="text wrap">
-          <h1>맥크리스피™ 클래식 버거</h1>
-          <p>McCrispy™ Classic Burger</p>
-        </div>
-      </div>
+          <div class="tab_inner">
+              <div class="menu-img">
+                <img src="img/햄버거/맥크리스피.png" alt="" />
+              </div>
+              <div class="menu-content">
+                <h1>맥크리스피™ 디럭스 버거</h1>
+                <p>McCrispy™ Delux Burger</p>
+              </div>
+          </div>
 
-      <div class="card">
-        <!-- crtl+ space bar 파일 경로 불러오기 -->
-        <img src="img/햄버거/더블플레오피쉬.png" alt="" />
-        <!-- 텍스트 객체 -->
-        <div class="text wrap">
-          <h1>맥크리스피™ 클래식 버거</h1>
-          <p>McCrispy™ Classic Burger</p>
+          <div class="tab_inner">
+              <div class="menu-img">
+                <img src="img/햄버거/빅맥.png" alt="" />
+              </div>
+              <div class="menu-content">
+                <h1>빅맥®</h1>
+                <p>Big Mac®</p>
+              </div>
+          </div>
+
+          <div class="tab_inner">
+              <div class="menu-img">
+                <img src="img/햄버거/상하이.png" alt="" />
+              </div>
+              <div class="menu-content">
+                <h1>맥스파이시® 상하이 버거</h1>
+                <p>McSpicy® Shanghai Burger</p>
+              </div>
+          </div>
+
+          <div class="tab_inner">
+              <div class="menu-img">
+                <img src="img/햄버거/필레오피쉬.png" alt="" />
+              </div>
+              <div class="menu-content">
+                <h1>필레 오 피쉬</h1>
+                <p>Filet-O-Fish</p>
+              </div>
+          </div>
+          
+          <div class="tab_inner">
+              <div class="menu-img">
+                <img src="img/햄버거/더블플레오피쉬.png" alt="" />
+              </div>
+              <div class="menu-content">
+                <h1>더블 필레오피쉬</h1>
+                <p>Double Filet-O-Fish</p>
+              </div>
+          </div>
+          
+          <div class="tab_inner">
+            <div class="menu-img">
+              <img src="img/햄버거/맥크리스피 클래식.png" alt="" />
+            </div>
+            <div class="menu-content">
+              <h1>맥크리스피™ 클래식 버거</h1>
+              <p>McCrispy™ Classic Burger</p>
+            </div>
+        </div>
+      </div>  
+      </div>
+        
+        <div class="tab_content">
+          <div class="tab_wrapper">
+              <div class="tab_inner">
+                  <div class="menu-img">
+                    <img src="img/햄버거/맥크리스피 클래식.png" alt="" />
+                  </div>
+                  <div class="menu-content">
+                    <h1>맥크리스피™ 클래식 버거</h1>
+                    <p>McCrispy™ Classic Burger</p>
+                  </div>
+              </div>
+
+              <div class="tab_inner">
+                  <div class="menu-img">
+                      <img src="img/menu/1653979328770.png" alt="">
+                  </div>
+                  <div class="menu-content">
+                      <p>겉은 바삭! 속은 쫄~깃!<br>
+                      2202년 맥윙 출시!</p>
+                  </div>
+              </div>
+
+
+              <div class="tab_inner">
+                  <div class="menu-img">
+                      <img src="img/menu/1655282749763.jpg" alt="">
+                  </div>
+                  <div class="menu-content">
+                      <p>달콤한 아이스크림과 진~한 라떼의 만남!<br>
+                          아이스크림 라떼 출시!</p>
+                  </div>
+              </div>
+
+              <div class="tab_inner">
+                  <div class="menu-img">
+                      <img src="img/menu/1653467599860.png" alt="">
+                  </div>
+                  <div class="menu-content">
+                      <p>겉바속촉 100% 통닭다리살!<br>
+                      먹어봐야 아는 맛! 맥크리스피 출시!</p>
+                  </div>
+              </div>
         </div>
       </div>
-      <div class="card">
-        <!-- crtl+ space bar 파일 경로 불러오기 -->
-        <img src="img/햄버거/맥크리스피 클래식.png" alt="" />
-        <!-- 텍스트 객체 -->
-        <div class="text wrap">
-          <h1>맥크리스피™ 클래식 버거</h1>
-          <p>McCrispy™ Classic Burger</p>
+      <div class="tab_content">
+          <div class="tab_wrapper">
+              <div class="tab_inner">
+                  <p class="end-txt" style="text-align: center;">종료된 프로모션입니다.</p>
+                  </div>
         </div>
-    </div>
-    <div class="card">
-      <!-- crtl+ space bar 파일 경로 불러오기 -->
-      <img src="img/햄버거/1955.png" alt="" />
-      <!-- 텍스트 객체 -->
-      <div class="text wrap">
-        <h1>맥크리스피™ 클래식 버거</h1>
-        <p>McCrispy™ Classic Burger</p>
+        </div>
       </div>
-    </div>
     </div>
     
 
@@ -164,6 +223,23 @@
         icons.classList.toggle('active')
 
       });
+
+      var tabList = document.querySelectorAll('.tab_list_wrap .tab_list')
+    Array.prototype.forEach.call(tabList, function(list) {
+    list.children[0].addEventListener('click', function(e) {
+    e.preventDefault()
+    var tabContent = document.querySelectorAll('.tab_container .tab_content')
+    var tabNum = this.parentElement.getAttribute('data-tabnum')
+    Array.prototype.forEach.call(tabContent, function(cont, i) {
+    cont.style.display = 'none'
+    tabList[i].className = 'tab_list'
+    })
+    tabContent[tabNum].style.display = 'block'
+    if(list.className.indexOf('tab_active') == -1) {
+    list.className = 'tab_list tab_active'
+    }
+    })
+    })
       </script>
 </body>
 </html>
