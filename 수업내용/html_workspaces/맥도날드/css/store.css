@@ -183,9 +183,6 @@ td {
   height: 150px;
 }
 
-.map-inner {
-  border-right: 1px solid black;
-}
 .txt-search {
   padding: 18px;
   width: 1200px;
@@ -211,9 +208,21 @@ td {
   border: 1px solid #bbb;
   border-radius: 12px;
 }
+.map-info{
+  text-align: left;
+  font-weight: bold;
+  color: red;
+}
 .map-click {
-  padding: 8px;
   text-align: center;
+  padding: 12px;
+  text-align: center;
+}
+.map-inner{
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  margin: 120px;
 }
 
 .navbar {
@@ -408,6 +417,12 @@ td {
   td {
     font-size: 10px;
     font-weight: bold;
+  }
+  .map-inner{
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+    margin: 120px;
   }
 }
 @media screen and (max-width: 480px) {
