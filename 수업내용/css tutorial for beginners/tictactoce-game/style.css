@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;1,100;1,200&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body{
+    background-color: #565696;
+}
+.select-box{
+    position: absolute;
+    top: 50% ;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #eee;
+    padding: 20px 25px 25px;
+    border-radius: 5px;
+}
+.select-box header{
+    font-size: 23px;
+    font-weight: 600;
+}
